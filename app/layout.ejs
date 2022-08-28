@@ -7,51 +7,60 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><%- title %></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg navbar-light border-bottom border-dark py-4 py-lg-0">
+      <div class="container">
+        <!-- Logo -->
+        <h1 class="mb-0 navber-brand lh-0">
+          <a class="navbar-logo" href="./index.html">ART NFT</a>
+        </h1>
+        <!-- 下拉圖示 -->
+        <div class="d-flex">
+          <form class="d-flex d-lg-none">
+            <input class="form-control border-0 me-6 bg-transparent d-lg-block d-none" type="search" placeholder="搜尋作品名稱、藝術家名稱" aria-label="Search">
+            <button class="btn p-0" type="submit">
+              <span class="material-icons d-flex align-items-center fw-bold">search</span>
+            </button>
+          </form>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <!-- 列項目 -->
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+          <ul class="navbar-nav d-flex align-items-center me-auto mb-2 mb-lg-0 border-start-lg border-lg-dark">
+
+            <li class="nav-link px-lg-12 d-none d-lg-block">
+              <form class="d-flex">
+                <input class="form-control border-0 me-6 bg-transparent d-lg-block" type="search" placeholder="搜尋作品名稱、藝術家名稱" aria-label="Search">
+                <button class="btn p-0" type="submit">
+                  <span class="material-icons d-flex align-items-center fw-bold">search</span>
+                </button>
+              </form>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+
+            <li class="nav-item border-start-lg border-lg-dark">
+              <a class="nav-link text-black fw-bold p-lg-12 active" aria-current="page" href="#">探索</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+            <li class="nav-item border-start-lg border-lg-dark">
+              <a class="nav-link text-black fw-bold p-lg-12" href="#">市值</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <li class="nav-item border-start-lg border-lg-dark">
+              <a href="#" class="nav-link text-black py-lg-12 ps-lg-12 material-icons">delete</a>
             </li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
         </div>
       </div>
     </nav>
 
     <%- contents %>
 
-    <footer class="footer py-5 bg-secondary text-light">
-      footer
+    <footer class="footer">
     </footer>
 
     <script src="./assets/js/vendors.js"></script>
