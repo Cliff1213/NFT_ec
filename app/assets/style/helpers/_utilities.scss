@@ -28,11 +28,32 @@ $utilities: map-merge(
         0: 0,
       )
     ),
+    "border-bottom": (
+      responsive: true,
+      property: border-bottom,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+      )
+    ),
     "border-color": (
       responsive: true,
       property: border-color,
       class: border,
       values: map-merge($theme-colors, ("white": $white))
+    ),
+    "background-color": (
+      responsive: true,
+      property: background-color,
+      class: bg,
+      values: map-merge(
+        $theme-colors,
+        (
+          "body": $body-bg,
+          "white": $white,
+          "transparent": transparent
+        )
+      )
     ),
   )
 )

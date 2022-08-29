@@ -11,4 +11,10 @@
       height: 40px;
     }
   }
+  &-mobile-background {
+    z-index: -1;
+    .inner-background {
+      height: 50px;
+    }
+  }
 }
