@@ -1,3 +1,4 @@
+// 擴充通用類別
 $utilities: map-merge(
   $utilities,
   (
@@ -55,5 +56,37 @@ $utilities: map-merge(
         )
       )
     ),
+    "writing-mode": (
+      responsive: true,
+      property: writing-mode,
+      class: writing,
+      values: (
+        "tb": horizontal-tb,
+        "lr": vertical-lr,
+        "rl": vertical-rl,
+      )
+    ),
+    "-margin-x": (
+      responsive: true,
+      property: margin-right margin-left,
+      class: -mx,
+      values: (
+        "0": 0,
+        "1": -($spacer * .25),
+        "2": -($spacer * .5),
+        "3": -($spacer * .75),
+        "4": -($spacer * 1),
+        "5": -($spacer * .125),
+      )
+    ),
+    "object-fix": (
+      responsive: true,
+      property: object-fit,
+      class: object-fix,
+      values: (
+        "contain": contain,
+        "cover": cover,
+      )
+    ),
   )
-)
+);
