@@ -1,3 +1,5 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css");
+
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
 
@@ -7,10 +9,10 @@
 
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
-@import './components/btn';
 
 @import './helpers/mixin.scss';
-
+@import './components/btn';
+@import './components/card';
 
 @import './layout/navbar.scss';
 

@@ -1,6 +1,6 @@
 // 三角裝飾按鈕樣式
 .btn-decoration {
-  border: 1px solid $black !important;
+  border: 1px solid $black;
   color: $black !important;
   &::before {
     content: "";
@@ -22,3 +22,4 @@
     transition: .3s;
   }
 }
+

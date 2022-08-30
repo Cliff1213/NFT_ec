@@ -20,6 +20,14 @@ $utilities: map-merge(
       class: fs,
       values: $font-sizes
     ),
+    "border": (
+      responsive: true,
+      property: border,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+      )
+    ),
     "border-start": (
       responsive: true,
       property: border-left,
@@ -86,6 +94,43 @@ $utilities: map-merge(
       values: (
         "contain": contain,
         "cover": cover,
+      )
+    ),
+    "object-position": (
+      responsive: true,
+      property: object-position,
+      class: object-position,
+      values: (
+        "top": top,
+        "bottom": bottom,
+        "start": left,
+        "end": right,
+      )
+    ),
+    "width": (
+      responsive: true,
+      property: width,
+      class: w,
+      values: (
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto,
+      )
+    ),
+    "height": (
+      responsive: true,
+      property: height,
+      class: h,
+      values: (
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto,
+        // 以下首頁卡片專用
+        374: 374px,
       )
     ),
   )

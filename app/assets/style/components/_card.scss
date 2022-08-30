@@ -1,0 +1,27 @@
+// 卡片標題左上數字
+@for $i from 1 through 6 {
+  .card-number-#{$i} {
+    position: relative;
+    &::before {
+      display: none;
+      @include lg {
+        display: block;
+        content: "#{$i}";
+        font-family: 'Paytone One';
+        position: absolute;
+        font-size: 32px;
+        left: 0;
+        top: 0;
+        width: 64px;
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $black;
+        background: $white;
+        border-right: 1px solid $black;
+        border-bottom: 1px solid $black;
+      }
+    }
+  }
+}
