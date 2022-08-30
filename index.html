@@ -5,13 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Boostrap Index</title>
+    <title>首頁</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Paytone+One&family=Squada+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
-  <body class="bg-success"> <!-- !背景色記得刪除 -->
+  <body class="bg-secondary">
     <!-- 導覽列 -->
     <nav class="navbar navbar-expand-lg navbar-light bg-lg-secondary border-bottom-lg border-lg-dark py-0 position-relative overflow-hidden">
       <div class="container">
@@ -32,7 +38,7 @@
           </div>
         </div>
 
-        <!-- ?手機版背景（詢問是否有叫好做法） -->
+        <!-- ?手機版背景（詢問是否有較好做法） -->
         <div class="navbar-mobile-background position-absolute top-0 start-0 w-100 bg-white h-100 d-lg-none">
           <div class="inner-background bg-secondary border-bottom border-black"></div>
         </div>
@@ -72,7 +78,7 @@
               <a class="nav-link text-black fs-5 fs-lg-6 fw-bold py-6 p-lg-10" href="#">市值</a>
             </li>
             <li class="nav-item border-start-lg border-lg-dark mb-6 mb-lg-0">
-              <a href="#" class="material-icons nav-link text-black py-lg-10 ps-lg-10 d-none d-lg-inline-block">delete</a>
+              <a href="#" class="material-icons nav-link text-black pe-0 py-lg-10 ps-lg-10 d-none d-lg-inline-block">delete</a>
               <a href="#" class="btn border-black text-white fs-5 fs-lg-6 bg-primary rounded-0 w-100 py-3 d-lg-none">連結錢包</a>
             </li>
           </ul>
@@ -81,12 +87,352 @@
     </nav>
 
     
+<main>
+  <!-- Banner -->
+  <section class="banner mt-lg-10">
+    <!-- 橫幅 1 -->
+    <div class="container px-0 px-lg-3">
+      <div class="card rounded-0 border border-black">
+        <div class="row mx-0 -mx-lg-3">
+          <div class="col-lg-8 px-0 px-lg-3">
+            <div class="d-flex bg-black">
+              <div class="banner-text d-none d-lg-block">
+                <p class="fs-1 text-white writing-rl m-0 ps-7 pe-5 pt-6">Recommend</p>
+                <p class="fs-4 text-white writing-rl mx-auto mt-4 p-6">推薦系列</p>
+              </div>
+              <div class="banner-img">
+                <img src="./assets/images/banner1.jpg" class="mw-100 h-100 object-fix-cover rounded-start" alt="img_banner">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 px-0 px-lg-3">
+            <div class="card-body p-3 ps-lg-0 pe-lg-6 py-8 py-lg-6 d-flex flex-column justify-content-between h-100">
+              <div class="card-text mb-6 mb-lg-0">
+                <p class="fs-5 mb-2">Kemus Wu</p>
+                <h3 class="card-title fs-3 fs-lg-1 fw-bold mb-6">瞳孔:流動的脈絡</h3>
+                <p class="card-text">眼睛，總是吸引著我們的注意力，看、被看，也許眼睛裡有著從另一個世界看我們的世界。</p>
+              </div>
+              <div class="card-btn align-self-end position-relative">
+                <button type="button" class="btn btn-decoration position-relative fs-5 rounded-0 py-2 px-12">MORE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 橫幅 2 -->
+      <div class="row gx-0">
+        <div class="col-lg-6">
+          <div class="card rounded-0 border border-black">
+            <div class="row gx-0">
+              <div class="col-lg-6 order-2 order-lg-1">
+                <div class="card-body d-flex flex-column justify-content-between h-100 py-8 px-3 p-lg-6 pt-lg-12">
+                  <div class="card-text mb-6 mb-lg-0">
+                    <p class="fs-5 mb-2">Kemus Wu</p>
+                    <h3 class="card-title fs-lg-2 fs-lg-1 fw-bold mb-6">海洋波度</h3>
+                    <p class="card-text">海洋的奧秘向我們揭示了深不可測的一面，它的深度——反映了我們的恐懼、同時也吸引著我們。</p>
+                  </div>
+                  <div class="card-btn align-self-end position-relative">
+                    <button type="button" class="btn btn-decoration position-relative fs-5 rounded-0 py-2 px-12">MORE</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2">
+                <div class="banner-img">
+                  <img src="./assets/images/banner2.jpg" class="img-fluid" alt="img_banner">
+                </div>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card rounded-0 border border-black">
+            <div class="row gx-0">
+              <div class="col-lg-6 order-2 order-lg-1">
+                <div class="card-body d-flex flex-column justify-content-between h-100 py-8 px-3 p-lg-6 pt-lg-12">
+                  <div class="card-text mb-6 mb-lg-0">
+                    <p class="fs-5 mb-2">Michael</p>
+                    <h3 class="card-title fs-lg-2 fs-lg-1 fw-bold mb-6">我家窗前的鳥</h3>
+                    <p class="card-text">家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
+                  </div>
+                  <div class="card-btn align-self-end position-relative">
+                    <button type="button" class="btn btn-decoration position-relative fs-5 rounded-0 py-2 px-12">MORE</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2">
+                <div class="banner-img">
+                  <img src="./assets/images/banner3.jpg" height="200px" class="img-fluid" alt="img_banner">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ranking -->
+  <section class="ranking py-10 py-lg-20">
+    <div class="container">
+      <!-- 標題 -->
+      <div class="position-relative mb-6 mb-lg-12">
+        <div class="d-flex justify-content-between align-items-end border-bottom border-black">
+          <div class="text-black d-flex align-items-end mb-2 mb-lg-4">
+            <h3 class="fs-2 fs-lg-1 mb-0 me-4">Ranking</h3>
+            <p class="fs-4 fw-bold mb-0 d-none d-lg-block">市價排行榜</p>
+          </div>
+          <button type="button" class="btn btn-decoration border-0 position-relative fs-5 rounded-0 py-2 px-12">MORE</button>
+        </div>
+      </div>
+  
+      <!-- 內容（響應式） -->
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-6">
+          <div class="card border border-black rounded-0 card-number-1">
+            <div class="row g-0">
+              <div class="col-1 d-lg-none">
+                <div class="d-flex align-items-center justify-content-center h-100 border-end border-black">
+                  <p class="fs-3 fw-bold mb-0">1</p>
+                </div>
+              </div>
+              <div class="col-3 col-lg-12">
+                <div class="border-end border-black border-lg-0">
+                  <img src="./assets/images/ranking1.jpg" height="95px" class="card-img-top object-fix-cover object-position-top h-lg-374" alt="img_ranking">
+                </div>
+              </div>
+              <div class="col-8 col-lg-12">
+                <div class="card-body text-black py-4 px-2 px-lg-4">
+                  <h5 class="card-title fs-5 fw-bold mb-0">散步遇到的女人</h5>
+                </div>
+                <div class="card-footer d-flex justify-content-between p-2 px-lg-4">
+                  <p class="mb-0">Zoe Jiang</p>
+                  <div class="d-flex align-items-center">
+                    <i class="fa-brands fa-ethereum me-2"></i>
+                    <p class="mb-0">300</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 mb-4 mb-lg-6">
+          <div class="card border border-black rounded-0 card-number-2">
+            <div class="row g-0">
+              <div class="col-1 d-lg-none">
+                <div class="d-flex align-items-center justify-content-center h-100 border-end border-black">
+                  <p class="fs-3 fw-bold mb-0">2</p>
+                </div>
+              </div>
+              <div class="col-3 col-lg-12">
+                <div class="border-end border-black border-lg-0">
+                  <img src="./assets/images/ranking2.jpg" height="95px" class="card-img-top object-fix-cover object-position-top h-lg-374" alt="img_ranking">
+                </div>
+              </div>
+              <div class="col-8 col-lg-12">
+                <div class="card-body text-black py-4 px-2 px-lg-4">
+                  <h5 class="card-title fs-5 fw-bold mb-0">爆炸頭的母親</h5>
+                </div>
+                <div class="card-footer d-flex justify-content-between p-2 px-lg-4">
+                  <p class="mb-0">Yui</p>
+                  <div class="d-flex align-items-center">
+                    <i class="fa-brands fa-ethereum me-2"></i>
+                    <p class="mb-0">300</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 mb-4 mb-lg-6">
+          <div class="card border border-black rounded-0 card-number-3">
+            <div class="row g-0">
+              <div class="col-1 d-lg-none">
+                <div class="d-flex align-items-center justify-content-center h-100 border-end border-black">
+                  <p class="fs-3 fw-bold mb-0">3</p>
+                </div>
+              </div>
+              <div class="col-3 col-lg-12">
+                <div class="border-end border-black border-lg-0">
+                  <img src="./assets/images/ranking3.jpg" height="95px" class="card-img-top object-fix-cover object-position-top h-lg-374" alt="img_ranking">
+                </div>
+              </div>
+              <div class="col-8 col-lg-12">
+                <div class="card-body text-black py-4 px-2 px-lg-4">
+                  <h5 class="card-title fs-5 fw-bold mb-0">夏天的時候</h5>
+                </div>
+                <div class="card-footer d-flex justify-content-between p-2 px-lg-4">
+                  <p class="mb-0">Bug Lin</p>
+                  <div class="d-flex align-items-center">
+                    <i class="fa-brands fa-ethereum me-2"></i>
+                    <p class="mb-0">300</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- 內容（無響應式） -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border border-black rounded-0">
+            <div class="row g-0">
+              <div class="col-1">
+                <div class="d-flex align-items-center justify-content-center h-100 border-end border-black">
+                  <p class="fs-3 fw-bold mb-0">4</p>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="border-end border-black border-lg-0">
+                  <img src="./assets/images/ranking4.jpg" height="95px" class="card-img-top object-fix-cover" alt="img_ranking">
+                </div>
+              </div>
+              <div class="col-8">
+                <div class="card-body text-black py-4 px-2 px-lg-4">
+                  <h5 class="card-title fs-5 fw-bold mb-0">追求者送我的花</h5>
+                </div>
+                <div class="card-footer d-flex justify-content-between p-2 px-lg-4">
+                  <p class="mb-0">Michael</p>
+                  <div class="d-flex align-items-center">
+                    <i class="fa-brands fa-ethereum me-2"></i>
+                    <p class="mb-0">300</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 mb-4">
+          <div class="card border border-black rounded-0">
+            <div class="row g-0">
+              <div class="col-1">
+                <div class="d-flex align-items-center justify-content-center h-100 border-end border-black">
+                  <p class="fs-3 fw-bold mb-0">5</p>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="border-end border-black border-lg-0">
+                  <img src="./assets/images/ranking5.jpg" height="95px" class="card-img-top object-fix-cover" alt="img_ranking">
+                </div>
+              </div>
+              <div class="col-8">
+                <div class="card-body text-black py-4 px-2 px-lg-4">
+                  <h5 class="card-title fs-5 fw-bold mb-0">今天釣到的魚</h5>
+                </div>
+                <div class="card-footer d-flex justify-content-between p-2 px-lg-4">
+                  <p class="mb-0">Wei JJ</p>
+                  <div class="d-flex align-items-center">
+                    <i class="fa-brands fa-ethereum me-2"></i>
+                    <p class="mb-0">300</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-4">
+          <div class="card border border-black rounded-0">
+            <div class="row g-0">
+              <div class="col-1">
+                <div class="d-flex align-items-center justify-content-center h-100 border-end border-black">
+                  <p class="fs-3 fw-bold mb-0">6</p>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="border-end border-black border-lg-0">
+                  <img src="./assets/images/ranking6.jpg" height="95px" class="card-img-top object-fix-cover" alt="img_ranking">
+                </div>
+              </div>
+              <div class="col-8">
+                <div class="card-body text-black py-4 px-2 px-lg-4">
+                  <h5 class="card-title fs-5 fw-bold mb-0">人生中的貓咪們</h5>
+                </div>
+                <div class="card-footer d-flex justify-content-between p-2 px-lg-4">
+                  <p class="mb-0">Even Lai</p>
+                  <div class="d-flex align-items-center">
+                    <i class="fa-brands fa-ethereum me-2"></i>
+                    <p class="mb-0">300</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Artist -->
+  <section class="artist mb-10 mb-lg-20"">
+    <div class="container">
+      <!-- 標題 -->
+      <div class="position-relative mb-6 mb-lg-12">
+        <div class="d-flex justify-content-between align-items-end border-bottom border-black">
+          <div class="text-black d-flex align-items-end mb-2 mb-lg-4">
+            <h3 class="fs-2 fs-lg-1 mb-0 me-4">Artist</h3>
+            <p class="fs-4 fw-bold mb-0 d-none d-lg-block">熱門藝術家</p>
+          </div>
+          <button type="button" class="btn btn-decoration border-0 position-relative fs-5 rounded-0 py-2 px-12">MORE</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 內容 -->
+    <div class="container">
+      <div class="swiper artist-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets/images/aritst1.jpg" class="img-fluid" alt="img_artist">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/aritst2.jpg" class="img-fluid" alt="img_artist">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/aritst3.jpg" class="img-fluid" alt="img_artist">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/aritst4.jpg" class="img-fluid" alt="img_artist">
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/aritst5.jpg" class="img-fluid" alt="img_artist">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Artwork -->
+  <section class="Artwork">
+    <div class="container">
+      <!-- 標題 -->
+      <div class="position-relative mb-6 mb-lg-12">
+        <div class="d-flex justify-content-between align-items-end border-bottom border-black">
+          <div class="text-black d-flex align-items-end mb-2 mb-lg-4">
+            <h3 class="fs-2 fs-lg-1 mb-0 me-4">Artwork</h3>
+            <p class="fs-4 fw-bold mb-0 d-none d-lg-block">最新藝術品</p>
+          </div>
+          <button type="button" class="btn btn-decoration border-0 position-relative fs-5 rounded-0 py-2 px-12">MORE</button>
+        </div>
+      </div>
 
 
+    </div>
+  </section>
+
+
+</main>
 
     <footer class="footer">
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
