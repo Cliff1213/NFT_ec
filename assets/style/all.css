@@ -9751,6 +9751,18 @@ fieldset:disabled .btn {
   .border-sm-0 {
     border: 0 !important;
   }
+  .border-top-sm {
+    border-top: 1px solid #dee2e6 !important;
+  }
+  .border-top-sm-0 {
+    border-top: 0 !important;
+  }
+  .border-end-sm {
+    border-right: 1px solid #dee2e6 !important;
+  }
+  .border-end-sm-0 {
+    border-right: 0 !important;
+  }
   .border-bottom-sm {
     border-bottom: 1px solid #dee2e6 !important;
   }
@@ -10913,6 +10925,18 @@ fieldset:disabled .btn {
   }
   .border-md-0 {
     border: 0 !important;
+  }
+  .border-top-md {
+    border-top: 1px solid #dee2e6 !important;
+  }
+  .border-top-md-0 {
+    border-top: 0 !important;
+  }
+  .border-end-md {
+    border-right: 1px solid #dee2e6 !important;
+  }
+  .border-end-md-0 {
+    border-right: 0 !important;
   }
   .border-bottom-md {
     border-bottom: 1px solid #dee2e6 !important;
@@ -12077,6 +12101,18 @@ fieldset:disabled .btn {
   .border-lg-0 {
     border: 0 !important;
   }
+  .border-top-lg {
+    border-top: 1px solid #dee2e6 !important;
+  }
+  .border-top-lg-0 {
+    border-top: 0 !important;
+  }
+  .border-end-lg {
+    border-right: 1px solid #dee2e6 !important;
+  }
+  .border-end-lg-0 {
+    border-right: 0 !important;
+  }
   .border-bottom-lg {
     border-bottom: 1px solid #dee2e6 !important;
   }
@@ -13240,6 +13276,18 @@ fieldset:disabled .btn {
   .border-xl-0 {
     border: 0 !important;
   }
+  .border-top-xl {
+    border-top: 1px solid #dee2e6 !important;
+  }
+  .border-top-xl-0 {
+    border-top: 0 !important;
+  }
+  .border-end-xl {
+    border-right: 1px solid #dee2e6 !important;
+  }
+  .border-end-xl-0 {
+    border-right: 0 !important;
+  }
   .border-bottom-xl {
     border-bottom: 1px solid #dee2e6 !important;
   }
@@ -14402,6 +14450,18 @@ fieldset:disabled .btn {
   }
   .border-xxl-0 {
     border: 0 !important;
+  }
+  .border-top-xxl {
+    border-top: 1px solid #dee2e6 !important;
+  }
+  .border-top-xxl-0 {
+    border-top: 0 !important;
+  }
+  .border-end-xxl {
+    border-right: 1px solid #dee2e6 !important;
+  }
+  .border-end-xxl-0 {
+    border-right: 0 !important;
   }
   .border-bottom-xxl {
     border-bottom: 1px solid #dee2e6 !important;
