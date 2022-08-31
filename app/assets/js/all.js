@@ -11,3 +11,9 @@ btnSearch.addEventListener('click', () => {
 btnBack.addEventListener('click', () => {
   inputSearch.classList.add('d-none');
 })
+
+
+
+$('.artwork-list').imagesLoaded().progress( function() {
+  $('.artwork-list').masonry(); 
+});
