@@ -18,14 +18,14 @@
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
-  <body class="bg-secondary">
+  <body class="bg-secondary pt-12-l pt-lg-26">
     <!-- 導覽列 -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-lg-secondary border-bottom-lg border-lg-dark py-0 position-relative overflow-hidden">
-      <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light border-bottom-lg border-lg-dark bg-secondary py-0 fixed-top overflow-hidden">
+      <div class="container-lg px-0 px-lg-3">
 
         <!-- 手機版搜尋區塊 -->
-        <div class="input-search-mobile d-none position-absolute top-50 start-0 translate-middle-y bg-secondary border-bottom border-black w-100 h-100 d-flex align-items-center">
-          <div class="container">
+        <div class="input-search-mobile d-none position-absolute top-50 start-0 translate-middle-y w-100 h-100 d-flex align-items-center bg-secondary">
+          <div class="container-lg">
             <form class="navbar-mobile-search d-flex justify-content-between align-items-center w-100 d-lg-none">
               <button class="btn-back btn p-1 me-4" type="button">
                 <span class="material-icons d-flex align-items-center">chevron_left</span>
@@ -39,18 +39,13 @@
           </div>
         </div>
 
-        <!-- ?手機版背景（詢問是否有較好做法） -->
-        <div class="navbar-mobile-background position-absolute top-0 start-0 w-100 bg-white h-100 d-lg-none">
-          <div class="inner-background bg-secondary border-bottom border-black"></div>
-        </div>
-
         <!-- Logo -->
-        <h1 class="mb-0 py-4 navbar-brand lh-0">
+        <h1 class="mb-0 py-4 navbar-brand lh-0 ps-3 ps-lg-0">
           <a class="navbar-logo" href="./index.html">ART NFT</a>
         </h1>
 
         <!-- 下拉圖示 -->
-        <div class="d-flex">
+        <div class="d-flex pe-3 pe-lg-0">
           <form class="navbar-mobile-search d-flex justify-content-between d-lg-none">
             <button class="btn-search-mobile btn p-1" type="button">
               <span class="material-icons d-flex align-items-center text-black fw-bold">search</span>
@@ -62,8 +57,8 @@
         </div>
 
         <!-- 列表項目 -->
-        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-lg-0 border-start-lg border-lg-dark text-center">
+        <div class="collapse navbar-collapse flex-grow-0 bg-white bg-lg-secondary" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-lg-0 border-start-lg border-lg-dark text-center px-3 px-lg-0">
             <li class="nav-link px-lg-12 py-0 d-none d-lg-flex align-items-lg-center">
               <form class="d-flex">
                 <input class="form-control border-0 me-6 bg-transparent" type="search" placeholder="搜尋作品名稱、藝術家名稱d" aria-label="Search">
