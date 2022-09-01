@@ -1,4 +1,4 @@
-// 卡片標題左上數字
+//* 卡片左上角數字
 @for $i from 1 through 6 {
   .card-number-#{$i} {
     position: relative;
@@ -25,3 +25,5 @@
     }
   }
 }
+
+

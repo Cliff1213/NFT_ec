@@ -20,6 +20,18 @@ $utilities: map-merge(
       class: fs,
       values: $font-sizes
     ),
+    "font-weight": (
+      responsive: true,
+      property: font-weight,
+      class: fw,
+      values: (
+        light: $font-weight-light,
+        lighter: $font-weight-lighter,
+        normal: $font-weight-normal,
+        bold: $font-weight-bold,
+        bolder: $font-weight-bolder
+      )
+    ),
     "border": (
       responsive: true,
       property: border,
@@ -147,7 +159,11 @@ $utilities: map-merge(
         100: 100%,
         auto: auto,
         // 以下首頁卡片專用
+        220: 220px,
+        254: 254px,
+        327: 327px,
         374: 374px,
+        395: 395px,
       )
     ),
   )

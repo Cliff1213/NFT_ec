@@ -1,0 +1,34 @@
+//* 圖片資訊淡出效果
+// 結構 img-info > img + ( img-info-background ) > img-info-content
+.img-info {
+  position: relative;
+  &-background {
+    display: none;
+    @include xl {
+      display: block;
+      opacity: 0;
+      transition: .3s;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 16px;
+      background: rgba($black, .7);
+    }
+  }
+  &-content {
+    border: 1px solid $white;
+    padding: 16px;
+    color: $white;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &:hover &-background {
+    opacity: 1;
+    transition: .3s;
+  }
+}
