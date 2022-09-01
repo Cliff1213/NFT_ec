@@ -136,6 +136,19 @@ $utilities: map-merge(
         "end": right,
       )
     ),
+    "opacity": (
+      responsive: true,
+      property: opacity,
+      class: opacity,
+      values: (
+        "0": 0,
+        "25": .25,
+        "50": .5,
+        "75": .75,
+        "85": .85,
+        "100": 1,
+      )
+    ),
     "width": (
       responsive: true,
       property: width,
