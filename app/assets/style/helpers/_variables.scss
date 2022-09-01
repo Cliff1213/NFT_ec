@@ -491,7 +491,8 @@ $display-font-sizes: (
   6: 2.5rem
 ) !default;
 
-$display-font-weight: 300 !default;
+// $display-font-weight: 300 !default;
+$display-font-weight: none !default;
 $display-line-height: $headings-line-height !default;
 // scss-docs-end display-headings
 
