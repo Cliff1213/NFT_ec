@@ -179,5 +179,12 @@ $utilities: map-merge(
         395: 395px,
       )
     ),
+    "font-family": (
+      property: font-family,
+      class: font,
+      values: (
+        "Noto-Sans-TC": "Noto Sans TC",
+      )
+    ),
   )
 );
