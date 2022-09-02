@@ -1,3 +1,4 @@
+// navbar
 const btnSearch = document.querySelector('.btn-search-mobile');
 const inputSearch = document.querySelector('.input-search-mobile');
 const btnBack = document.querySelector('.btn-back');
@@ -12,6 +13,7 @@ btnBack.addEventListener('click', () => {
   inputSearch.classList.add('d-none');
 })
 
+
 // swiper
 const swiper = new Swiper(".artist-swiper", {
   loop: true,
@@ -19,7 +21,7 @@ const swiper = new Swiper(".artist-swiper", {
   centeredSlides: true,
   slidesPerView: 1,
   breakpoints: {
-  576: {
+  768: {
     slidesPerView: 2.5
   },
   992: {

@@ -3,6 +3,8 @@
   border: 1px solid $black;
   color: $black !important;
   background: $white;
+  line-height: 1;
+  padding: 8px 48px;
   &::before {
     content: "";
     position: absolute;
