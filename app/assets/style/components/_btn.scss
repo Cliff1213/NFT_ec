@@ -1,10 +1,12 @@
-// 三角裝飾按鈕樣式
+// 三角裝飾按鈕
 .btn-decoration {
+  position: relative;
   border: 1px solid $black;
   color: $black !important;
   background: $white;
   line-height: 1;
   padding: 8px 48px;
+  transition: .3s;
   &::before {
     content: "";
     position: absolute;
@@ -20,9 +22,14 @@
     background: $primary !important;
     color: $white !important;
   }
+  // 標題按鈕效果
+  &-title:hover {
+    border-top: 1px solid $black !important;
+    border-right: 1px solid $black !important;
+    border-left: 1px solid $black !important;
+  }
   &:hover::before {
     background: $black !important;
     transition: .3s;
   }
 }
-
