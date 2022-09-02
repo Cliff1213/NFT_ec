@@ -9241,8 +9241,8 @@ fieldset:disabled .btn {
   padding-left: 6.5rem !important;
 }
 
-.font-monospace {
-  font-family: var(--bs-font-monospace) !important;
+.font-Noto-Sans-TC {
+  font-family: "Noto Sans TC" !important;
 }
 
 .fs-1 {
@@ -9273,8 +9273,8 @@ fieldset:disabled .btn {
   font-size: 0.875rem !important;
 }
 
-.fs-10 {
-  font-size: 0.5rem !important;
+.fs-8 {
+  font-size: 0.75rem !important;
 }
 
 .fst-italic {
@@ -10853,8 +10853,8 @@ fieldset:disabled .btn {
   .fs-sm-7 {
     font-size: 0.875rem !important;
   }
-  .fs-sm-10 {
-    font-size: 0.5rem !important;
+  .fs-sm-8 {
+    font-size: 0.75rem !important;
   }
   .fw-sm-light {
     font-weight: 300 !important;
@@ -12177,8 +12177,8 @@ fieldset:disabled .btn {
   .fs-md-7 {
     font-size: 0.875rem !important;
   }
-  .fs-md-10 {
-    font-size: 0.5rem !important;
+  .fs-md-8 {
+    font-size: 0.75rem !important;
   }
   .fw-md-light {
     font-weight: 300 !important;
@@ -13501,8 +13501,8 @@ fieldset:disabled .btn {
   .fs-lg-7 {
     font-size: 0.875rem !important;
   }
-  .fs-lg-10 {
-    font-size: 0.5rem !important;
+  .fs-lg-8 {
+    font-size: 0.75rem !important;
   }
   .fw-lg-light {
     font-weight: 300 !important;
@@ -14825,8 +14825,8 @@ fieldset:disabled .btn {
   .fs-xl-7 {
     font-size: 0.875rem !important;
   }
-  .fs-xl-10 {
-    font-size: 0.5rem !important;
+  .fs-xl-8 {
+    font-size: 0.75rem !important;
   }
   .fw-xl-light {
     font-weight: 300 !important;
@@ -16149,8 +16149,8 @@ fieldset:disabled .btn {
   .fs-xxl-7 {
     font-size: 0.875rem !important;
   }
-  .fs-xxl-10 {
-    font-size: 0.5rem !important;
+  .fs-xxl-8 {
+    font-size: 0.75rem !important;
   }
   .fw-xxl-light {
     font-weight: 300 !important;
@@ -16333,9 +16333,15 @@ fieldset:disabled .btn {
 }
 
 .btn-decoration {
+  position: relative;
   border: 1px solid #000;
   color: #000 !important;
   background: #fff;
+  line-height: 1;
+  padding: 8px 48px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
 }
 
 .btn-decoration::before {
@@ -16356,6 +16362,12 @@ fieldset:disabled .btn {
 .btn-decoration:hover {
   background: #E6553B !important;
   color: #fff !important;
+}
+
+.btn-decoration-title:hover {
+  border-top: 1px solid #000 !important;
+  border-right: 1px solid #000 !important;
+  border-left: 1px solid #000 !important;
 }
 
 .btn-decoration:hover::before {
@@ -16384,6 +16396,7 @@ fieldset:disabled .btn {
     top: 0;
     width: 64px;
     height: 64px;
+    z-index: 10;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -16419,6 +16432,7 @@ fieldset:disabled .btn {
     top: 0;
     width: 64px;
     height: 64px;
+    z-index: 10;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -16454,6 +16468,7 @@ fieldset:disabled .btn {
     top: 0;
     width: 64px;
     height: 64px;
+    z-index: 10;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -16489,6 +16504,7 @@ fieldset:disabled .btn {
     top: 0;
     width: 64px;
     height: 64px;
+    z-index: 10;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -16524,6 +16540,7 @@ fieldset:disabled .btn {
     top: 0;
     width: 64px;
     height: 64px;
+    z-index: 10;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -16559,6 +16576,7 @@ fieldset:disabled .btn {
     top: 0;
     width: 64px;
     height: 64px;
+    z-index: 10;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -16583,7 +16601,7 @@ fieldset:disabled .btn {
   display: none;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .img-info-background {
     display: block;
     opacity: 0;
@@ -16618,10 +16636,57 @@ fieldset:disabled .btn {
 }
 
 .img-info:hover .img-info-background {
+  opacity: 1 !important;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.img-info-sm {
+  position: relative;
+}
+
+.img-info-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #fff !important;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.img-info-link::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 16px;
+  height: 16px;
+  background: #E6553B;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+.hoverArea:hover .img-info-link {
   opacity: 1;
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .navbar-logo {
@@ -16682,9 +16747,19 @@ fieldset:disabled .btn {
   z-index: 10;
 }
 
+.swiper-slide-active .img-info-background {
+  display: block !important;
+}
+
 .swiper-pagination {
   position: unset;
-  margin-top: 100px;
+  margin-top: 24px;
+}
+
+@media (min-width: 768px) {
+  .swiper-pagination {
+    margin-top: 100px;
+  }
 }
 
 .swiper-pagination-bullet {
