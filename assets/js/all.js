@@ -37,14 +37,13 @@ var swiper = new Swiper(".artist-swiper", {
     clickable: true
   }
 }); // masonry
-// $('.row-masonry').imagesLoaded().progress( function() {
-//   $('.row-masonry').masonry(); 
-// });
 
 $('.tab-masonry').on('shown.bs.tab', function () {
   var msnry = Masonry.data($('.row-masonry')[0]);
   $('.row-masonry').imagesLoaded(function () {
     msnry.layout();
   });
-});
+}); // $('.row-masonry').imagesLoaded().progress( function() {
+//   $('.row-masonry').masonry(); 
+// });
 //# sourceMappingURL=all.js.map
