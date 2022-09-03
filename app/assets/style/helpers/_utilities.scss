@@ -116,6 +116,20 @@ $utilities: map-merge(
         "5": -($spacer * .125),
       )
     ),
+    "-margin-left-tiny": (
+      responsive: true,
+      property: margin-left,
+      class: -ms-xs,
+      values: (
+        "0": 0,
+        "1": -1px,
+      )
+    ),
+    "position": (
+      responsive: true,
+      property: position,
+      values: static relative absolute fixed sticky
+    ),
     "object-fix": (
       responsive: true,
       property: object-fit,
@@ -174,6 +188,8 @@ $utilities: map-merge(
         // 以下首頁卡片專用
         220: 220px,
         254: 254px,
+        270: 270px,
+        313: 313px,
         327: 327px,
         374: 374px,
         395: 395px,

@@ -27,4 +27,25 @@
   }
 }
 
-
+// 卡片角落三角裝飾
+.card-corner {
+  position: relative;
+  &-top-start {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background: $black;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+  }
+  &-top-end {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    background: $black;
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+  }
+}
