@@ -16,6 +16,10 @@ btnBack.addEventListener('click', function () {
 var swiper = new Swiper(".artist-swiper", {
   loop: true,
   speed: 500,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false
+  },
   centeredSlides: true,
   slidesPerView: 1,
   breakpoints: {
@@ -33,8 +37,14 @@ var swiper = new Swiper(".artist-swiper", {
     clickable: true
   }
 }); // masonry
+// $('.row-masonry').imagesLoaded().progress( function() {
+//   $('.row-masonry').masonry(); 
+// });
 
-$('.artwork-list').imagesLoaded().progress(function () {
-  $('.artwork-list').masonry();
+$('.tab-masonry').on('shown.bs.tab', function () {
+  var msnry = Masonry.data($('.row-masonry')[0]);
+  $('.row-masonry').imagesLoaded(function () {
+    msnry.layout();
+  });
 });
 //# sourceMappingURL=all.js.map
