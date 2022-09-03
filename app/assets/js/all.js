@@ -18,6 +18,10 @@ btnBack.addEventListener('click', () => {
 const swiper = new Swiper(".artist-swiper", {
   loop: true,
   speed: 500,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   centeredSlides: true,
   slidesPerView: 1,
   breakpoints: {
@@ -38,6 +42,13 @@ const swiper = new Swiper(".artist-swiper", {
 
 
 // masonry
-$('.artwork-list').imagesLoaded().progress( function() {
-  $('.artwork-list').masonry(); 
+// $('.row-masonry').imagesLoaded().progress( function() {
+//   $('.row-masonry').masonry(); 
+// });
+
+$('.tab-masonry').on('shown.bs.tab', function () {
+  let msnry = Masonry.data($('.row-masonry')[0]);
+  $('.row-masonry').imagesLoaded(function () {
+    msnry.layout();
+  });
 });
