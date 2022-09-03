@@ -42,13 +42,13 @@ const swiper = new Swiper(".artist-swiper", {
 
 
 // masonry
-// $('.row-masonry').imagesLoaded().progress( function() {
-//   $('.row-masonry').masonry(); 
-// });
-
 $('.tab-masonry').on('shown.bs.tab', function () {
   let msnry = Masonry.data($('.row-masonry')[0]);
   $('.row-masonry').imagesLoaded(function () {
     msnry.layout();
   });
 });
+
+// $('.row-masonry').imagesLoaded().progress( function() {
+//   $('.row-masonry').masonry(); 
+// });
