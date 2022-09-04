@@ -18406,8 +18406,10 @@ fieldset:disabled .btn {
   transition: .3s;
 }
 
-.swiper {
-  padding: 70px 0 0;
+@media (min-width: 992px) {
+  .swiper {
+    padding: 70px 0 0;
+  }
 }
 
 .swiper-slide {
