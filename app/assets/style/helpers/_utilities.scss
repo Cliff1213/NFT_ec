@@ -125,6 +125,15 @@ $utilities: map-merge(
         "1": -1px,
       )
     ),
+    "-margin-top-tiny": (
+      responsive: true,
+      property: margin-top,
+      class: -mt-xs,
+      values: (
+        "0": 0,
+        "1": -1px,
+      )
+    ),
     "position": (
       responsive: true,
       property: position,
@@ -185,12 +194,11 @@ $utilities: map-merge(
         75: 75%,
         100: 100%,
         auto: auto,
-        // 以下首頁卡片專用
+        // 以下為首頁卡片不規則高度
         185: 185px,
         220: 220px,
         254: 254px,
         270: 270px,
-        313: 313px,
         327: 327px,
         374: 374px,
         395: 395px,

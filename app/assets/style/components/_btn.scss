@@ -1,4 +1,4 @@
-// 三角裝飾按鈕
+//* 三角裝飾按鈕
 .btn-decoration {
   position: relative;
   border: 1px solid $black;
@@ -22,7 +22,7 @@
     background: $primary !important;
     color: $white !important;
   }
-  // 標題按鈕效果
+  // 當按鈕 in 區塊標題
   &-title:hover {
     border-top: 1px solid $black !important;
     border-right: 1px solid $black !important;

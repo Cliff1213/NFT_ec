@@ -3,7 +3,6 @@
   padding: 70px 0 0;
   &-slide {
     transition: .8s;
-    user-select: none;
     filter:grayscale(1);
     -webkit-filter:grayscale(1);
     &-prev {

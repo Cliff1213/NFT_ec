@@ -5,9 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%- title %></title>
+
+    <meta property="og:title" content="ART NFT，NFT 藝術交易平台">
+    <meta property="og:description" content="電商網站切版練習">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="圖片">
+
+    <link rel="shortcut icon" href="./assets/images/logo_xs.png" type="image/x-icon">
+
+    <title><%- title %>－ART NFT｜NFT 藝術交易平台</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +27,7 @@
 
   <body class="bg-secondary pt-12-l pt-lg-26">
     <!-- 導覽列 -->
-    <nav class="navbar navbar-expand-lg navbar-light border-bottom-lg border-lg-dark bg-secondary py-0 fixed-top overflow-hidden">
+    <nav class="navbar navbar-expand-lg border-bottom-lg border-lg-dark bg-secondary py-0 fixed-top overflow-hidden">
       <div class="container-lg px-0 px-lg-3">
 
         <!-- 手機版搜尋區塊 -->
@@ -52,32 +59,32 @@
             </button>
           </form>
           <button class="navbar-toggler p-0 ms-6" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa-solid fa-bars fs-3 text-black d-flex align-items-center"></i>
+            <i class="fa-solid fa-bars fs-3 text-black d-flex align-items-center px-1"></i>
           </button>
         </div>
 
         <!-- 列表項目 -->
         <div class="collapse navbar-collapse flex-grow-0 bg-white bg-lg-secondary" id="navbarSupportedContent">
           <ul class="navbar-nav mb-lg-0 border-start-lg border-lg-dark text-center px-3 px-lg-0">
-            <li class="nav-link px-lg-12 py-0 d-none d-lg-flex align-items-lg-center">
+            <li class="px-lg-12 py-0 d-none d-lg-flex align-items-lg-center">
               <form class="d-flex">
                 <input class="form-control border-0 me-6 bg-transparent lh-1" type="search" placeholder="搜尋作品名稱、藝術家名稱" aria-label="Search" style="min-width: 288px;">
                 <button class="btn p-0" type="button">
-                  <i class="fa-sharp fa-solid fa-magnifying-glass fs-3 text-black d-flex align-items-center"></i>
+                  <i class="nav-icon fa-sharp fa-solid fa-magnifying-glass fs-3 text-black d-flex align-items-center"></i>
                 </button>
               </form>
             </li>
             <li class="nav-item border-start-lg border-lg-dark">
-              <a href="#" class="nav-link text-black fs-5 fs-lg-6 fw-bold py-6 p-lg-10 border-bottom border-bottom-lg-0 border-black active" aria-current="page">探索</a>
+              <a href="javascript:;" class="nav-link text-black fs-5 fs-lg-6 fw-bold py-6 p-lg-10 border-bottom border-bottom-lg-0 border-black active" aria-current="page">探索</a>
             </li>
             <li class="nav-item border-start-lg border-lg-dark">
-              <a class="nav-link text-black fs-5 fs-lg-6 fw-bold py-6 p-lg-10" href="#">市值</a>
+              <a class="nav-link text-black fs-5 fs-lg-6 fw-bold py-6 p-lg-10" href="javascript:;">市值</a>
             </li>
             <li class="nav-item border-start-lg border-lg-dark mb-6 mb-lg-0">
 
-              <a href="#"><i class="fa-solid fa-wallet nav-link fs-3 text-black pe-0 py-lg-10 ps-lg-10 d-none d-lg-inline-block"></i></a>
+              <a href="javascript:;"><i class="fa-solid fa-wallet nav-link fs-3 text-black pe-0 py-lg-10 ps-lg-10 d-none d-lg-inline-block"></i></a>
 
-              <a href="#" class="btn border-black text-white fs-5 fs-lg-6 bg-primary rounded-0 w-100 py-3 d-lg-none">連結錢包</a>
+              <a href="javascript:;" class="btn border-black text-white fs-5 fs-lg-6 bg-primary rounded-0 w-100 py-3 d-lg-none">連結錢包</a>
             </li>
           </ul>
         </div>
@@ -86,6 +93,7 @@
 
     <%- contents %>
 
+    <!-- 頁尾 -->
     <footer class="footer border-top border-black text-center pt-2">
       <div class="py-6 border-4 border-top border-black">
         <p class="mb-0">© ART NFT. All Rights Reserved</p>

@@ -27,7 +27,7 @@
   }
 }
 
-// 卡片角落三角裝飾
+//* 卡片三角裝飾
 .card-corner {
   position: relative;
   &-top-start {
@@ -49,3 +49,4 @@
     clip-path: polygon(0 0, 100% 0, 100% 100%);
   }
 }
+
