@@ -1,6 +1,8 @@
 // swiper {
 .swiper {
-  padding: 70px 0 0;
+  @include lg {
+    padding: 70px 0 0;
+  }
   &-slide {
     transition: .8s;
     filter:grayscale(1);
