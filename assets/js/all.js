@@ -24,10 +24,13 @@ var swiper = new Swiper(".artist-swiper", {
   slidesPerView: 1,
   breakpoints: {
     768: {
-      slidesPerView: 2.5
+      slidesPerView: 2.3
     },
-    992: {
-      slidesPerView: 3
+    1200: {
+      slidesPerView: 2.88
+    },
+    1400: {
+      slidesPerView: 2.9
     }
   },
   spaceBetween: 24,
