@@ -1,115 +1,69 @@
-// swiper {
-// .swiper {
-//   @include md {
-//     padding: 70px 0 0;
-//   }
-//   &-slide {
-//     transition: .8s;
-//     filter:grayscale(1);
-//     -webkit-filter:grayscale(1);
-//     &-prev {
-//       transform: translateX(-25%);
-//     }
-//     &-next {
-//       transform: translateX(25%);
-//     }
-//   }
-//   &-slide-active {
-//     filter:grayscale(0);
-//     -webkit-filter:grayscale(0);
-//     transform: scale(150%);
-//     transition: .8s;
-//     z-index: 10;
-//     // 配合 img-info 元件
-//     .img-info-background {
-//       display: block !important;
-//     }
-//   }
-//   &-pagination {
-//     position: unset;
-//     margin-top: 24px;
-//     @include md {
-//       margin-top: 100px;
-//     }
-//     &-bullet {
-//       border-radius: 0;
-//       background: $black;
-//       opacity: 1;
-//       transition: .5s;
-//     }
-//     &-bullet-active {
-//       width: 16px;
-//       background: $primary;
-//       transition: .5s;
-//     }
-//   }
-// }
-
-
-.swiper {
-  &-wrapper {
-    @include md {
-      height: 255px;
-    }
-    @include lg {
-      height: 344px;
-    }
-    @include xxl {
-      height: 398px;
-    }
-  }
-  &-slide {
-    @include md {
-      display: flex;
-      align-items: center;
-    }
-    transition: .8s;
-    filter:grayscale(1);
-    -webkit-filter:grayscale(1);
-    &-prev {
+// swiper
+  .swiper {
+    &-wrapper {
       @include md {
-        width: 35% !important;
+        height: 255px;
       }
-      @include xl {
-        width: 27% !important;
+      @include lg {
+        height: 344px;
+      }
+      @include xxl {
+        height: 398px;
       }
     }
-    &-next {
+    &-slide {
       @include md {
-        width: 35% !important;
+        display: flex;
+        align-items: center;
       }
-      @include xl {
-        width: 27% !important;
+      transition: .8s;
+      filter:grayscale(1);
+      -webkit-filter:grayscale(1);
+      &-prev, &-next {
+        @include md {
+          width: 35% !important;
+        }
+        @include xl {
+          width: 27% !important;
+        }
       }
     }
-  }
-  &-slide-active {
-    transition: .8s;
-    filter:grayscale(0);
-    -webkit-filter:grayscale(0);
-    @include md {
-      width: 55% !important;
-    }
-    @include xl {
-        width: 46% !important;
-    }
-    // 配合 img-info 元件
     .img-info-background {
-      display: block !important;
+      transition: .8s;
+      @include md {
+        transform: scale(0%);
+      }
+    }
+    &-slide-active {
+      transition: .8s;
+      filter:grayscale(0);
+      -webkit-filter:grayscale(0);
+      @include md {
+        width: 55% !important;
+      }
+      @include xl {
+          width: 46% !important;
+      }
+      .img-info-background {
+        opacity: 1 !important;
+        display: block !important;
+        @include md {
+          transform: scale(100%);
+        }
+      }
+    }
+    &-pagination {
+      position: unset;
+      &-bullet {
+        border-radius: 0;
+        background: $black;
+        opacity: 1;
+        transition: .5s;
+      }
+      &-bullet-active {
+        width: 16px;
+        background: $primary;
+        transition: .5s;
+      }
     }
   }
-  &-pagination {
-    position: unset;
-    &-bullet {
-      border-radius: 0;
-      background: $black;
-      opacity: 1;
-      transition: .5s;
-    }
-    &-bullet-active {
-      width: 16px;
-      background: $primary;
-      transition: .5s;
-    }
-  }
-}
