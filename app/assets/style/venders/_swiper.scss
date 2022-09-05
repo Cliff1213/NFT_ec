@@ -1,6 +1,6 @@
 // swiper {
 .swiper {
-  @include lg {
+  @include md {
     padding: 70px 0 0;
   }
   &-slide {
