@@ -13,6 +13,13 @@ $utilities: map-merge(
         lg: $line-height-lg,
       )
     ),
+    "display-font-size": (
+      rfs: false,
+      responsive: true,
+      property: font-size,
+      class: display,
+      values: $display-font-sizes
+    ),
     "font-size": (
       rfs: false,
       responsive: true,
