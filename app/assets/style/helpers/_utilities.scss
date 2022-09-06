@@ -144,7 +144,18 @@ $utilities: map-merge(
     "position": (
       responsive: true,
       property: position,
-      values: static relative absolute fixed sticky
+      values: static relative absolute fixed sticky unset
+    ),
+    "translate-middle": (
+      responsive: true,
+      property: transform,
+      class: translate-middle,
+      values: (
+        null: translate(-50%, -50%),
+        x: translateX(-50%),
+        y: translateY(-50%),
+        0: unset,
+      )
     ),
     "object-fix": (
       responsive: true,
@@ -207,6 +218,7 @@ $utilities: map-merge(
         254: 254px,
         270: 270px,
         327: 327px,
+        368: 368px,
         374: 374px,
         395: 395px,
       )
@@ -216,6 +228,15 @@ $utilities: map-merge(
       class: font,
       values: (
         "Noto-Sans-TC": "Noto Sans TC",
+      )
+    ),
+    "z-index": (
+      responsive: true,
+      property: z-index,
+      class: z,
+      values: (
+        100: 100,
+        none: none
       )
     ),
   )
