@@ -9,6 +9,15 @@ btnSearch.addEventListener('click', () => {
   inputSearch.classList.remove('d-none');
 })
 
+window.addEventListener('resize', () => {
+  let viewWidth = document.documentElement.clientWidth;
+  // console.log(viewWidth);
+
+  if(viewWidth > 992) {
+    inputSearch.classList.add('d-none');
+  }
+})
+
 btnBack.addEventListener('click', () => {
   inputSearch.classList.add('d-none');
 })

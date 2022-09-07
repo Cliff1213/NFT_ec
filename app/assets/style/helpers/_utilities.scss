@@ -243,3 +243,12 @@ $utilities: map-merge(
     ),
   )
 );
+
+// hover
+.hover-color-primary{
+  transition: .3s;
+  &:hover {
+    color: $primary !important;
+    transition: .3s;
+  }
+}
