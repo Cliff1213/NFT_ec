@@ -14,8 +14,8 @@ btnBack.addEventListener('click', () => {
 })
 
 
-// swiper
-const swiper = new Swiper(".artist-swiper", {
+// swiper of index
+const indexSwiper = new Swiper(".index-swiper", {
   loop: true,
   speed: 500,
   autoplay: {
@@ -43,6 +43,29 @@ const swiper = new Swiper(".artist-swiper", {
   },
 });
 
+// swiper of intro
+const introSwiper = new Swiper(".intro-swiper", {
+  loop: true,
+  speed: 500,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  slidesPerView: 2,
+  breakpoints: {
+    768: {
+      slidesPerView: 4
+    },
+  },
+  spaceBetween: 24,
+  effect: 'slide',
+  pagination: {
+  el: ".swiper-pagination",
+  clickable: true,
+  },
+});
+
+
 
 // masonry
 $('.tab-masonry').on('shown.bs.tab', function () {
@@ -51,10 +74,6 @@ $('.tab-masonry').on('shown.bs.tab', function () {
     msnry.layout();
   });
 });
-
-// $('.row-masonry').imagesLoaded().progress( function() {
-//   $('.row-masonry').masonry(); 
-// });
 
 
 // aos

@@ -560,7 +560,8 @@ $mark-bg:                     #fcf8e3 !default;
 
 // scss-docs-start table-variables
 $table-cell-padding-y:        .5rem !default;
-$table-cell-padding-x:        .5rem !default;
+$table-cell-padding-x:        1rem !default;
+// $table-cell-padding-x:        0 !default;
 $table-cell-padding-y-sm:     .25rem !default;
 $table-cell-padding-x-sm:     .25rem !default;
 

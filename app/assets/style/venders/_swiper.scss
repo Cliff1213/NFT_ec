@@ -1,6 +1,6 @@
-// swiper
-  .swiper {
-    &-wrapper {
+// swiper of index
+  .index-swiper {
+    .swiper-wrapper {
       @include md {
         height: 255px;
       }
@@ -11,7 +11,7 @@
         height: 398px;
       }
     }
-    &-slide {
+    .swiper-slide {
       @include md {
         display: flex;
         align-items: center;
@@ -34,7 +34,7 @@
         transform: scale(0%);
       }
     }
-    &-slide-active {
+    .swiper-slide-active {
       transition: .8s;
       filter:grayscale(0);
       -webkit-filter:grayscale(0);
@@ -52,8 +52,30 @@
         }
       }
     }
-    &-pagination {
+    .swiper-pagination {
       position: unset;
+      &-bullet {
+        border-radius: 0;
+        background: $black;
+        opacity: 1;
+        transition: .5s;
+      }
+      &-bullet-active {
+        width: 16px;
+        background: $primary;
+        transition: .5s;
+      }
+    }
+  }
+
+// swiper of intro
+  .intro-swiper {
+    .swiper-pagination {
+      margin-top: 24px;
+      position: unset;
+      @include lg {
+        margin-top: 48px;
+      }
       &-bullet {
         border-radius: 0;
         background: $black;
