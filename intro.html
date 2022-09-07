@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta property="og:title" content="ART NFT，NFT 藝術交易平台">
+    <meta property="og:description" content="電商網站切版練習">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="圖片">
+
+    <link rel="shortcut icon" href="./assets/images/logo_xs.png" type="image/x-icon">
+
+    <title>藝術品介紹－ART NFT｜NFT 藝術交易平台</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Paytone+One&family=Squada+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body class="bg-secondary pt-12-l pt-lg-26">
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg border-bottom-lg border-lg-dark bg-secondary py-0 fixed-top overflow-hidden">
+      <div class="container-lg px-0 px-lg-3">
+
+        <!-- 手機版搜尋區塊 -->
+        <div class="input-search-mobile d-none position-absolute top-50 start-0 translate-middle-y w-100 h-100 d-flex align-items-center bg-secondary">
+          <div class="container-lg">
+            <form class="navbar-mobile-search d-flex justify-content-between align-items-center w-100 d-lg-none">
+              <button class="btn-back btn p-1 me-4" type="button">
+                <i class="fa-solid fa-angle-left fs-5 text-black d-flex align-items-center"></i>
+              </button>
+
+              <input class="navbar-mobile-input form-control border-0 bg-secondary lh-1" type="search" placeholder="搜尋作品名稱、藝術家名稱" aria-label="Search">
+              <button class="btn p-1 ms-4" type="button">
+                <i class="fa-sharp fa-solid fa-magnifying-glass fs-5 text-black d-flex align-items-center"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Logo -->
+        <h1 class="mb-0 py-4 navbar-brand lh-0 ps-3 ps-lg-0">
+          <a class="navbar-logo" href="./index.html">ART NFT</a>
+        </h1>
+
+        <!-- 下拉圖示 -->
+        <div class="d-flex pe-3 pe-lg-0">
+          <form class="navbar-mobile-search d-flex justify-content-between d-lg-none">
+            <button class="btn-search-mobile btn p-1" type="button">
+              <i class="fa-sharp fa-solid fa-magnifying-glass fs-5 text-black d-flex align-items-center"></i>
+            </button>
+          </form>
+          <button class="navbar-toggler p-0 ms-6" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars fs-3 text-black d-flex align-items-center px-1"></i>
+          </button>
+        </div>
+
+        <!-- 列表項目 -->
+        <div class="collapse navbar-collapse flex-grow-0 bg-white bg-lg-secondary" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-lg-0 border-start-lg border-lg-dark text-center px-3 px-lg-0">
+            <li class="px-lg-12 py-0 d-none d-lg-flex align-items-lg-center">
+              <form class="d-flex">
+                <input class="form-control border-0 me-6 bg-transparent lh-1" type="search" placeholder="搜尋作品名稱、藝術家名稱" aria-label="Search" style="min-width: 288px;">
+                <button class="btn p-0" type="button">
+                  <i class="nav-icon fa-sharp fa-solid fa-magnifying-glass fs-3 text-black d-flex align-items-center"></i>
+                </button>
+              </form>
+            </li>
+            <li class="nav-item border-start-lg border-lg-dark">
+              <a href="javascript:;" class="nav-link text-black fs-5 fs-lg-6 fw-bold py-6 p-lg-10 border-bottom border-bottom-lg-0 border-black active" aria-current="page">探索</a>
+            </li>
+            <li class="nav-item border-start-lg border-lg-dark">
+              <a class="nav-link text-black fs-5 fs-lg-6 fw-bold py-6 p-lg-10" href="javascript:;">市值</a>
+            </li>
+            <li class="nav-item border-start-lg border-lg-dark mb-6 mb-lg-0">
+
+              <a href="javascript:;"><i class="fa-solid fa-wallet nav-link fs-3 text-black pe-0 py-lg-10 ps-lg-10 d-none d-lg-inline-block"></i></a>
+
+              <a href="javascript:;" class="btn border-black text-white fs-5 fs-lg-6 bg-primary rounded-0 w-100 py-3 d-lg-none">連結錢包</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    
+<section class="intro pt-6 pt-lg-10 mb-10">
+  <div class="container">
+    <!-- 圖片 & 標題 -->
+    <div class="row">
+      <div class="col-lg-6 mb-6">
+        <img src="./assets/images/banner3.jpg" height="288px" class="w-100 object-fix-cover object-position-top h-sm-395 h-lg-546" alt="img_intro">
+      </div>
+      <div class="col-lg-6 mb-6">
+        <div class="card border border-black h-100">
+          <div class="card-header bg-white border-black px-4 pt-4 pb-6 px-lg-10 py-lg-8">
+            <div class="d-flex flex-column flex-lg-row justify-content-lg-between mb-4">
+              <div class="d-flex align-items-center mb-4 order-lg-2">
+                <img src="./assets/images/aritst1.jpg" width="32px" height="32px" class="img-fulid object-fix-cover rounded-pill me-2" alt="img_intro">
+                <p>Michael</p>
+              </div>
+              <h2 class="card-title fs-2 fs-xl-1 fw-bold mb-0 order-lg-1">兩情相悅</h2>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-end">
+              <div>
+                <p class="card-subtitle mb-2 text-muted fs-7">最高出價</p>
+                <div class="d-flex align-items-center">
+                  <img src="./assets/images/user1.jpg" width="32px" height="32px" class="img-fulid object-fix-cover rounded-pill me-2" alt="img_intro">
+                  <i class="fa-solid fa-arrow-right me-2"></i>
+                  <p>0.044Eth</p>
+                </div>
+              </div>
+  
+              <a href="javascript:;" class="btn bg-primary text-white fs-5 py-2 px-12 border-black">出價</a>
+            </div>
+          </div>
+
+          <div class="card-body font-Noto-Sans-TC px-4 py-6 px-lg-10 py-lg-8">
+            <p class="mb-4">3/14 情人節外面剛好有兩隻鳥，也在過情人節。</p>
+            <p class="mb-4">而且其中一隻竟然有梳油頭，不知道是不是有用定型液，他們感情真好，出門還會特別打扮，看著看著不禁思考，我怎麼會變這樣？</p>
+            <p class="mb-0">好羨慕啊，我也要有這樣兩情相悅的另一半。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 項目列表 -->
+    <ul class="row row-masonry list-unstyled mb-0" data-masonry='{"percentPosition": true }'>
+
+      <!-- 屬性 -->
+      <li class="col-lg-6 mb-6 font-Noto-Sans-TC">
+        <div class="card border-0 bg-transparent">
+          <div class="accordion" id="introAttr">
+            <div class="accordion-item border border-black">
+              <h2 class="accordion-header border-bottom border-black" id="introHeading1">
+                <button class="accordion-button fw-bold p-4 p-lg-6" type="button" data-bs-toggle="collapse" data-bs-target="#introCollapse1" aria-expanded="true" aria-controls="introCollapse1">
+                  屬性
+                </button>
+              </h2>
+              <div id="introCollapse1" class="accordion-collapse collapse show" aria-labelledby="introHeading1">
+                <div class="accordion-body px-4 py-6 p-lg-6">
+                  <ul class="list-unstyled">
+                    <li class="d-flex justify-content-between mb-4">
+                      <p>品種</p>
+                      <p class="text-gray-light">青藍金剛鸚鵡</p>
+                    </li>
+                    <li class="d-flex justify-content-between mb-4">
+                      <p>鳥的數量</p>
+                      <p class="text-gray-light">2隻</p>
+                    </li>
+                    <li class="d-flex justify-content-between mb-4">
+                      <p>是否有花草</p>
+                      <p class="text-gray-light">是</p>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                      <p>鳥的顏色</p>
+                      <p class="text-gray-light">藍色</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <!-- 出價 -->
+      <li class="col-lg-6 mb-6">
+        <div class="card border-0 bg-transparent">
+          <div class="accordion" id="introPrice">
+            <div class="accordion-item border border-black">
+              <h2 class="accordion-header border-bottom border-black" id="introHeading2">
+                <button class="accordion-button fw-bold p-4 p-lg-6" type="button" data-bs-toggle="collapse" data-bs-target="#introCollapse2" aria-expanded="true" aria-controls="introCollapse2">
+                  出價
+                </button>
+              </h2>
+              <div id="introCollapse2" class="accordion-collapse collapse show" aria-labelledby="introHeading2">
+                <div class="accordion-body px-4 py-6 p-lg-6">
+
+                  <table class="table table-borderless mb-0">
+                    <thead class="bg-light text-center">
+                      <tr>
+                        <th class="fw-normal w-50">價格</th>
+                        <th class="fw-normal w-50">期限</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-bottom border-light">
+                        <td class="px-0">
+                          <div class="d-flex align-items-center">
+                            <img src="./assets/images/aritst3.jpg" width="32px" height="32px" class="img-fulid object-fix-cover rounded-pill me-2" alt="img_intro">
+                            <i class="fa-solid fa-arrow-right me-2"></i>
+                            <p>0.044Eth</p>
+                          </div>
+                        </td>
+                        <td class="text-gray-light text-end font-Noto-Sans-TC px-0">3 個月後</td>
+                      </tr>
+                      <tr class="border-bottom border-light">
+                        <td class="px-0">
+                          <div class="d-flex align-items-center">
+                            <img src="./assets/images/user2.jpg" width="32px" height="32px" class="img-fulid object-fix-cover rounded-pill me-2" alt="img_intro">
+                            <i class="fa-solid fa-arrow-right me-2"></i>
+                            <p>0.044Eth</p>
+                          </div>
+                        </td>
+                        <td class="text-gray-light text-end font-Noto-Sans-TC px-0">1 個月後</td>
+                      </tr>
+                      <tr>
+                        <td class="px-0 pb-0">
+                          <div class="d-flex align-items-center">
+                            <img src="./assets/images/user3.jpg" width="32px" height="32px" class="img-fulid object-fix-cover rounded-pill me-2" alt="img_intro">
+                            <i class="fa-solid fa-arrow-right me-2"></i>
+                            <p>0.044Eth</p>
+                          </div>
+                        </td class="pb-0">
+                        <td class="text-gray-light text-end font-Noto-Sans-TC px-0">2 週後</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <!-- 基本資訊 -->
+      <li class="col-lg-6 mb-6 font-Noto-Sans-TC">
+        <div class="card border-0 bg-transparent">
+          <div class="accordion" id="introInfo">
+            <div class="accordion-item border border-black">
+              <h2 class="accordion-header border-bottom border-black" id="introHeading3">
+                <button class="accordion-button fw-bold p-4 p-lg-6" type="button" data-bs-toggle="collapse" data-bs-target="#introCollapse3" aria-expanded="true" aria-controls="introCollapse3">
+                  基本資訊
+                </button>
+              </h2>
+              <div id="introCollapse3" class="accordion-collapse collapse show" aria-labelledby="introHeading3">
+                <div class="accordion-body px-4 py-6 p-lg-6">
+                  <ul class="list-unstyled">
+                    <li class="d-flex justify-content-between mb-4">
+                      <p>擁有者</p>
+                      <p class="text-gray-light">0xa543x…1283</p>
+                    </li>
+                    <li class="d-flex justify-content-between mb-4">
+                      <p>代幣ID</p>
+                      <p class="text-gray-light">#1234</p>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                      <p>合約地址</p>
+                      <p class="text-gray-light">青藍金剛鸚鵡</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <!-- 交易歷史 -->
+      <li class="col-lg-6">
+        <div class="card border-0 bg-transparent">
+          <div class="accordion" id="introHistory">
+            <div class="accordion-item border border-black">
+              <h2 class="accordion-header border-bottom border-black" id="introHeading4">
+                <button class="accordion-button fw-bold p-4 p-lg-6" type="button" data-bs-toggle="collapse" data-bs-target="#introCollapse4" aria-expanded="true" aria-controls="introCollapse4">
+                  交易歷史
+                </button>
+              </h2>
+              <div id="introCollapse4" class="accordion-collapse collapse show" aria-labelledby="introHeading4">
+                <div class="accordion-body px-4 py-6 p-lg-6">
+
+                  <table class="table table-borderless mb-0 font-Noto-Sans-TC">
+                    <thead class="bg-light">
+                      <tr>
+                        <th class="fw-normal">事件</th>
+                        <th class="fw-normal">價格</th>
+                        <th class="fw-normal">從</th>
+                        <th class="fw-normal">時間</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="">上價</td>
+                        <td class="">2nb</td>
+                        <td>
+                          <img src="./assets/images/aritst2.jpg" width="24px" height="24px" class="img-fulid object-fix-cover rounded-pill" alt="img_intro">
+                        </td>
+                        <td class="text-gray-light">14 小時前</td>
+                      </tr>
+                      <tr>
+                        <td class="pb-0">出價</td>
+                        <td class="pb-0">2nb</td>
+                        <td class="pb-0">
+                          <img src="./assets/images/aritst1.jpg" width="24px" height="24px" class="img-fulid object-fix-cover rounded-pill" alt="img_intro">
+                        </td>
+                        <td class="text-gray-light pb-0">2 週後</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+    </ul>
+
+  </div>
+</section>
+
+
+<!-- Other -->
+<section class="other mb-10 mb-lg-20">
+  <div class="container text-black">
+    <!-- 標題 -->
+    <div class="position-relative mb-6 mb-lg-12">
+      <div class="d-flex justify-content-between align-items-end border-bottom border-black">
+        <div class="d-flex align-items-end mb-2 mb-lg-4">
+          <h3 class="fs-2 fs-lg-1 mb-0 lh-1 d-flex align-items-end">Other<span class="fs-4 fw-bold ms-4 d-none d-lg-block">其餘作品</span></h3>
+        </div>
+        <a href="javascript:;">
+          <button type="button" class="btn-decoration btn-decoration-title border border-bottom-0 border-secondary bg-transparent">MORE</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- 內容 -->
+    <div class="swiper intro-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="card border-0 bg-transparent">
+            <div class="card-img bg-white p-2 p-xl-6">
+              <div class="img-info">
+                <a href="javascript:;">
+                  <img src="./assets/images/series8.jpg" class="card-img-top object-fix-cover h-lg-327" height="164px" alt="img_intro">
+                </a>
+                <div class="img-info-background d-none d-lg-block">
+                  <div class="img-info-content">
+                    <div>
+                      <p class="mb-2">唯一想擁有的人，唯一不可以擁有的</p>
+                      <div class="d-flex align-items-center">
+                        <i class="fa-brands fa-ethereum me-2"></i>
+                        <p class="mb-0">300</p>
+                      </div>
+                    </div>
+                    <div class="card-btn align-self-end">
+                      <a href="javascript:;">
+                        <button type="button" class="btn-decoration">MORE</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body border-bottom-lg border-lg-black p-2 px-lg-0 py-lg-4">
+              <h4 class="card-text fs-7 fs-lg-6 fw-lg-bold">群聚的小鳥們</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="card border-0 bg-transparent">
+            <div class="card-img bg-white p-2 p-xl-6">
+              <div class="img-info">
+                <a href="javascript:;">
+                  <img src="./assets/images/artwork8.jpg" class="card-img-top object-fix-cover h-lg-327" height="164px" alt="img_intro">
+                </a>
+                <div class="img-info-background d-none d-lg-block">
+                  <div class="img-info-content">
+                    <div>
+                      <p class="mb-2">唯一想擁有的人，唯一不可以擁有的</p>
+                      <div class="d-flex align-items-center">
+                        <i class="fa-brands fa-ethereum me-2"></i>
+                        <p class="mb-0">300</p>
+                      </div>
+                    </div>
+                    <div class="card-btn align-self-end">
+                      <a href="javascript:;">
+                        <button type="button" class="btn-decoration">MORE</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body border-bottom-lg border-lg-black p-2 px-lg-0 py-lg-4">
+              <h4 class="card-text fs-7 fs-lg-6 fw-lg-bold">我真的受傷了</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="card border-0 bg-transparent">
+            <div class="card-img bg-white p-2 p-xl-6">
+              <div class="img-info">
+                <a href="javascript:;">
+                  <img src="./assets/images/series6.jpg" class="card-img-top object-fix-cover h-lg-327" height="164px" alt="img_intro">
+                </a>
+                <div class="img-info-background d-none d-lg-block">
+                  <div class="img-info-content">
+                    <div>
+                      <p class="mb-2">唯一想擁有的人，唯一不可以擁有的</p>
+                      <div class="d-flex align-items-center">
+                        <i class="fa-brands fa-ethereum me-2"></i>
+                        <p class="mb-0">300</p>
+                      </div>
+                    </div>
+                    <div class="card-btn align-self-end">
+                      <a href="javascript:;">
+                        <button type="button" class="btn-decoration">MORE</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body border-bottom-lg border-lg-black p-2 px-lg-0 py-lg-4">
+              <h4 class="card-text fs-7 fs-lg-6 fw-lg-bold">這兩隻也太像企鵝了吧</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="card border-0 bg-transparent">
+            <div class="card-img bg-white p-2 p-xl-6">
+              <div class="img-info">
+                <a href="javascript:;">
+                  <img src="./assets/images/series7.jpg" class="card-img-top object-fix-cover h-lg-327" height="164px" alt="img_intro">
+                </a>
+                <div class="img-info-background d-none d-lg-block">
+                  <div class="img-info-content">
+                    <div>
+                      <p class="mb-2">唯一想擁有的人，唯一不可以擁有的</p>
+                      <div class="d-flex align-items-center">
+                        <i class="fa-brands fa-ethereum me-2"></i>
+                        <p class="mb-0">300</p>
+                      </div>
+                    </div>
+                    <div class="card-btn align-self-end">
+                      <a href="javascript:;">
+                        <button type="button" class="btn-decoration">MORE</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body border-bottom-lg border-lg-black p-2 px-lg-0 py-lg-4">
+              <h4 class="card-text fs-7 fs-lg-6 fw-lg-bold">群聚囉～小鳥</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+    <!-- 頁尾 -->
+    <footer class="footer border-top border-black text-center pt-2">
+      <div class="py-6 border-4 border-top border-black">
+        <p class="mb-0">© ART NFT. All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+
+
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
