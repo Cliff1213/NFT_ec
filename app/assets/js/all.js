@@ -22,7 +22,6 @@ btnBack.addEventListener('click', () => {
   inputSearch.classList.add('d-none');
 })
 
-
 // swiper of index
 const indexSwiper = new Swiper(".index-swiper", {
   loop: true,
@@ -47,13 +46,15 @@ const indexSwiper = new Swiper(".index-swiper", {
   spaceBetween: 24,
   effect: 'slide',
   pagination: {
-  el: ".swiper-pagination",
-  clickable: true,
+    el: ".swiper-pagination",
+    clickable: true,
   },
+  grabCursor: true,
 });
 
 // swiper of intro
 const introSwiper = new Swiper(".intro-swiper", {
+  // loop + link = bug
   loop: true,
   speed: 500,
   autoplay: {
@@ -69,9 +70,10 @@ const introSwiper = new Swiper(".intro-swiper", {
   spaceBetween: 24,
   effect: 'slide',
   pagination: {
-  el: ".swiper-pagination",
-  clickable: true,
+    el: ".swiper-pagination",
+    clickable: true,
   },
+  grabCursor: true,
 });
 
 

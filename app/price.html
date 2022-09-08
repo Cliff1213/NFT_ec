@@ -1,0 +1,560 @@
+---
+title: 市價排行榜
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<section class="price mt-6 mt-lg-10 text-black">
+  <div class="container mb-10 mb-lg-20">
+    <h2 class="fs-xl-1 fw-bold text-center mb-4 mb-lg-6">市價排行榜</h2>
+    <p class="mb-8 mb-lg-12 text-center font-Noto-Sans-TC">NFT系列藝術作品排行榜！全球注目指標</p>
+
+    <ul class="list-unstyled font-Noto-Sans-TC d-flex justify-content-between pe-6 text-end d-none d-lg-flex">
+      <li class="w-5"></li>
+      <li class="flex-grow-1 text-start">系列作品名稱</li>
+      <li class="w-10">價值</li>
+      <li class="w-10">24h%</li>
+      <li class="w-10">7d%</li>
+      <li class="w-10">地板價</li>
+      <li class="w-10">擁有者</li>
+      <li class="w-10">作品數量</li>
+    </ul>
+
+    <!-- 列表 -->
+    <ul class="accordion accordion-custom list-unstyled" id="accordionPrice">
+      <!-- 1 -->
+      <li class="accordion-item border border-black">
+        <p class="accordion-header" id="headingOne">
+          <button class="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <ul class="list-unstyled w-100 d-flex justify-content-between align-items-center pe-2 pe-lg-6">
+              <li class="w-10 w-md-5 fs-3 font-Paytone-One text-center">1</li>
+              <li class="border-start border-black px-2 py-4 p-lg-4 flex-grow-1">
+                <div class="d-flex align-items-center">
+                  <img src="./assets/images/series4.jpg" width="48px" height="48px" class="img-fulid object-fix-cover rounded-pill me-2 me-lg-4" alt="img_intro">
+                  <h3 class="mb-0 fs-7 fs-lg-6 fw-bold text-nowrap">追求者送我的花</h3>
+                </div>
+              </li>
+              <li class="w-30 w-lg-10 text-end">
+                <p class="mb-0 fs-4"><span><i class="fa-brands fa-ethereum me-2"></i></span>1,774.19</p>
+              </li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block text-success">+220.49%</li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block text-primary">-2.43%</li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block">
+                <p class="mb-0 fs-4"><span><i class="fa-brands fa-ethereum me-2"></i></span>2.90</p>
+              </li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block">32.1K</li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block">1000</li>
+            </ul>
+          </button>
+        </p>
+        <div id="collapseOne" class="accordion-collapse collapse d-lg-none" aria-labelledby="headingOne" data-bs-parent="#accordionPrice">
+          <div class="accordion-body p-4 border-top border-black">
+            <ul class="row list-unstyled justify-content-center text-center mb-0">
+              <li class="col-4">
+                <p class="fs-7 font-Noto-Sans-TC">24h%</p>
+                <p class="fs-4 text-success">+220.49%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7 font-Noto-Sans-TC">7d%</p>
+                <p class="fs-4 text-primary">-2.43%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7 font-Noto-Sans-TC">地板價</p>
+                <p class="fs-4 mb-0"><span><i class="fa-brands fa-ethereum me-2"></i></span>2.90</p>
+              </li>
+              <li class="col-4 mt-4">
+                <p class="fs-7 font-Noto-Sans-TC">擁有者</p>
+                <p class="fs-4">32.1K</p>
+              </li>
+              <li class="col-4 mt-4">
+                <p class="fs-7 font-Noto-Sans-TC">作品數量</p>
+                <p class="fs-4">1000</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <!-- 2 -->
+      <li class="accordion-item border border-black -mt-xs-1">
+        <p class="accordion-header" id="headingTwo">
+          <button class="accordion-button p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            <ul class="list-unstyled w-100 d-flex justify-content-between align-items-center pe-2 pe-lg-6">
+              <li class="w-10 w-md-5 fs-3 font-Paytone-One text-center">2</li>
+              <li class="border-start border-black px-2 py-4 p-lg-4 flex-grow-1">
+                <div class="d-flex align-items-center">
+                  <img src="./assets/images/ranking3.jpg" width="48px" height="48px" class="img-fulid object-fix-cover rounded-pill me-2 me-lg-4" alt="img_intro">
+                  <h3 class="mb-0 fs-7 fs-lg-6 fw-bold text-nowrap">夏天的時候</h3>
+                </div>
+              </li>
+              <li class="w-30 w-lg-10 text-end">
+                <p class="mb-0 fs-4"><span><i class="fa-brands fa-ethereum me-2"></i></span>1,524.89</p>
+              </li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block text-success">+80.49%</li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block text-primary">-2.43%</li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block">
+                <p class="mb-0 fs-4"><span><i class="fa-brands fa-ethereum me-2"></i></span>2.90</p>
+              </li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block">32.1K</li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block">1000</li>
+            </ul>
+          </button>
+        </p>
+        <div id="collapseTwo" class="accordion-collapse collapse show d-lg-none" aria-labelledby="headingTwo" data-bs-parent="#accordionPrice">
+          <div class="accordion-body p-4 border-top border-black">
+            <ul class="row list-unstyled justify-content-center text-center mb-0">
+              <li class="col-4">
+                <p class="fs-7 font-Noto-Sans-TC">24h%</p>
+                <p class="fs-4 text-success">+220.49%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7 font-Noto-Sans-TC">7d%</p>
+                <p class="fs-4 text-primary">-2.43%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7 font-Noto-Sans-TC">地板價</p>
+                <p class="fs-4 mb-0"><span><i class="fa-brands fa-ethereum me-2"></i></span>2.90</p>
+              </li>
+              <li class="col-4 mt-4">
+                <p class="fs-7 font-Noto-Sans-TC">擁有者</p>
+                <p class="fs-4">32.1K</p>
+              </li>
+              <li class="col-4 mt-4">
+                <p class="fs-7 font-Noto-Sans-TC">作品數量</p>
+                <p class="fs-4">1000</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <!-- 3 -->
+      <li class="accordion-item border border-black -mt-xs-1">
+        <p class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+            <ul class="list-unstyled w-100 d-flex justify-content-between align-items-center pe-2 pe-lg-6">
+              <li class="w-10 w-md-5 fs-3 font-Paytone-One text-center">3</li>
+              <li class="border-start border-black px-2 py-4 p-lg-4 flex-grow-1">
+                <div class="d-flex align-items-center">
+                  <img src="./assets/images/banner2.jpg" width="48px" height="48px" class="img-fulid object-fix-cover rounded-pill me-2 me-lg-4" alt="img_intro">
+                  <h3 class="mb-0 fs-7 fs-lg-6 fw-bold text-nowrap">海洋波度</h3>
+                </div>
+              </li>
+              <li class="w-30 w-lg-10 text-end">
+                <p class="mb-0 fs-4"><span><i class="fa-brands fa-ethereum me-2"></i></span>1,400.59</p>
+              </li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block text-primary">-3.92%</li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block text-primary">-13.43%</li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block">
+                <p class="mb-0 fs-4"><span><i class="fa-brands fa-ethereum me-2"></i></span>2.90</p>
+              </li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block">32.1K</li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block">1000</li>
+            </ul>
+          </button>
+        </p>
+        <div id="collapseThree" class="accordion-collapse collapse d-lg-none" aria-labelledby="headingThree" data-bs-parent="#accordionPrice">
+          <div class="accordion-body p-4 border-top border-black">
+            <ul class="row list-unstyled justify-content-center text-center mb-0">
+              <li class="col-4">
+                <p class="fs-7 font-Noto-Sans-TC">24h%</p>
+                <p class="fs-4 text-primary">-3.92%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7 font-Noto-Sans-TC">7d%</p>
+                <p class="fs-4 text-primary">-13.43%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7 font-Noto-Sans-TC">地板價</p>
+                <p class="fs-4 mb-0"><span><i class="fa-brands fa-ethereum me-2"></i></span>2.90</p>
+              </li>
+              <li class="col-4 mt-4">
+                <p class="fs-7 font-Noto-Sans-TC">擁有者</p>
+                <p class="fs-4">32.1K</p>
+              </li>
+              <li class="col-4 mt-4">
+                <p class="fs-7 font-Noto-Sans-TC">作品數量</p>
+                <p class="fs-4">1000</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <!-- 4 -->
+      <li class="accordion-item border border-black -mt-xs-1">
+        <p class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+            <ul class="list-unstyled w-100 d-flex justify-content-between align-items-center pe-2 pe-lg-6">
+              <li class="w-10 w-md-5 fs-3 font-Paytone-One text-center">4</li>
+              <li class="border-start border-black px-2 py-4 p-lg-4 flex-grow-1">
+                <div class="d-flex align-items-center">
+                  <img src="./assets/images/artwork6.jpg" width="48px" height="48px" class="img-fulid object-fix-cover rounded-pill me-2 me-lg-4" alt="img_intro">
+                  <h3 class="mb-0 fs-7 fs-lg-6 fw-bold text-nowrap">賴床真的很不好</h3>
+                </div>
+              </li>
+              <li class="w-30 w-lg-10 text-end">
+                <p class="mb-0 fs-4"><span><i class="fa-brands fa-ethereum me-2"></i></span>1,224.88</p>
+              </li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block text-primary">-9.23%</li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block text-primary">-20.43%</li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block">
+                <p class="mb-0 fs-4"><span><i class="fa-brands fa-ethereum me-2"></i></span>2.90</p>
+              </li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block">32.1K</li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block">1000</li>
+            </ul>
+          </button>
+        </p>
+        <div id="collapseFour" class="accordion-collapse collapse d-lg-none" aria-labelledby="headingFour" data-bs-parent="#accordionPrice">
+          <div class="accordion-body p-4 border-top border-black">
+            <ul class="row list-unstyled justify-content-center text-center mb-0">
+              <li class="col-4">
+                <p class="fs-7 font-Noto-Sans-TC">24h%</p>
+                <p class="fs-4 text-primary">-9.23%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7 font-Noto-Sans-TC">7d%</p>
+                <p class="fs-4 text-primary">-20.43%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7 font-Noto-Sans-TC">地板價</p>
+                <p class="fs-4 mb-0"><span><i class="fa-brands fa-ethereum me-2"></i></span>2.90</p>
+              </li>
+              <li class="col-4 mt-4">
+                <p class="fs-7 font-Noto-Sans-TC">擁有者</p>
+                <p class="fs-4">32.1K</p>
+              </li>
+              <li class="col-4 mt-4">
+                <p class="fs-7 font-Noto-Sans-TC">作品數量</p>
+                <p class="fs-4">1000</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <!-- 5 -->
+      <li class="accordion-item border border-black -mt-xs-1">
+        <p class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+            <ul class="list-unstyled w-100 d-flex justify-content-between align-items-center pe-2 pe-lg-6">
+              <li class="w-10 w-md-5 fs-3 font-Paytone-One text-center">5</li>
+              <li class="border-start border-black px-2 py-4 p-lg-4 flex-grow-1">
+                <div class="d-flex align-items-center">
+                  <img src="./assets/images/banner1.jpg" width="48px" height="48px" class="img-fulid object-fix-cover rounded-pill me-2 me-lg-4" alt="img_intro">
+                  <h3 class="mb-0 fs-7 fs-lg-6 fw-bold text-nowrap">瞳孔:流動的脈絡</h3>
+                </div>
+              </li>
+              <li class="w-30 w-lg-10 text-end">
+                <p class="mb-0 fs-4"><span><i class="fa-brands fa-ethereum me-2"></i></span>888.88</p>
+              </li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block text-success">+83.49%</li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block text-primary">-1.43%</li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block">
+                <p class="mb-0 fs-4"><span><i class="fa-brands fa-ethereum me-2"></i></span>2.90</p>
+              </li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block">32.1K</li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block">1000</li>
+            </ul>
+          </button>
+        </p>
+        <div id="collapseFive" class="accordion-collapse collapse d-lg-none" aria-labelledby="headingFive" data-bs-parent="#accordionPrice">
+          <div class="accordion-body p-4 border-top border-black">
+            <ul class="row list-unstyled justify-content-center text-center mb-0">
+              <li class="col-4">
+                <p class="fs-7 font-Noto-Sans-TC">24h%</p>
+                <p class="fs-4 text-success">+83.49%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7 font-Noto-Sans-TC">7d%</p>
+                <p class="fs-4 text-primary">-1.43%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7 font-Noto-Sans-TC">地板價</p>
+                <p class="fs-4 mb-0"><span><i class="fa-brands fa-ethereum me-2"></i></span>2.90</p>
+              </li>
+              <li class="col-4 mt-4">
+                <p class="fs-7 font-Noto-Sans-TC">擁有者</p>
+                <p class="fs-4">32.1K</p>
+              </li>
+              <li class="col-4 mt-4">
+                <p class="fs-7 font-Noto-Sans-TC">作品數量</p>
+                <p class="fs-4">1000</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <!--6 -->
+      <li class="accordion-item border border-black -mt-xs-1">
+        <p class="accordion-header" id="headingSix">
+          <button class="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+            <ul class="list-unstyled w-100 d-flex justify-content-between align-items-center pe-2 pe-lg-6">
+              <li class="w-10 w-md-5 fs-3 font-Paytone-One text-center">6</li>
+              <li class="border-start border-black px-2 py-4 p-lg-4 flex-grow-1">
+                <div class="d-flex align-items-center">
+                  <img src="./assets/images/aritst5.jpg" width="48px" height="48px" class="img-fulid object-fix-cover rounded-pill me-2 me-lg-4" alt="img_intro">
+                  <h3 class="mb-0 fs-7 fs-lg-6 fw-bold text-nowrap">哭泣的時候</h3>
+                </div>
+              </li>
+              <li class="w-30 w-lg-10 text-end">
+                <p class="mb-0 fs-4"><span><i class="fa-brands fa-ethereum me-2"></i></span>921.42</p>
+              </li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block text-primary">-9.43%</li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block text-success">+183.49%</li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block">
+                <p class="mb-0 fs-4"><span><i class="fa-brands fa-ethereum me-2"></i></span>2.90</p>
+              </li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block">32.1K</li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block">1000</li>
+            </ul>
+          </button>
+        </p>
+        <div id="collapseSix" class="accordion-collapse collapse d-lg-none" aria-labelledby="headingSix" data-bs-parent="#accordionPrice">
+          <div class="accordion-body p-4 border-top border-black">
+            <ul class="row list-unstyled justify-content-center text-center mb-0">
+              <li class="col-4">
+                <p class="fs-7 font-Noto-Sans-TC">24h%</p>
+                <p class="fs-4 text-primary">-9.43%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7 font-Noto-Sans-TC">7d%</p>
+                <p class="fs-4 text-success">+183.49%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7 font-Noto-Sans-TC">地板價</p>
+                <p class="fs-4 mb-0"><span><i class="fa-brands fa-ethereum me-2"></i></span>2.90</p>
+              </li>
+              <li class="col-4 mt-4">
+                <p class="fs-7 font-Noto-Sans-TC">擁有者</p>
+                <p class="fs-4">32.1K</p>
+              </li>
+              <li class="col-4 mt-4">
+                <p class="fs-7 font-Noto-Sans-TC">作品數量</p>
+                <p class="fs-4">1000</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <!-- 7 -->
+      <li class="accordion-item border border-black -mt-xs-1">
+        <p class="accordion-header" id="headingSeven">
+          <button class="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+            <ul class="list-unstyled w-100 d-flex justify-content-between align-items-center pe-2 pe-lg-6">
+              <li class="w-10 w-md-5 fs-3 font-Paytone-One text-center">7</li>
+              <li class="border-start border-black px-2 py-4 p-lg-4 flex-grow-1">
+                <div class="d-flex align-items-center">
+                  <img src="./assets/images/series3.jpg" width="48px" height="48px" class="img-fulid object-fix-cover rounded-pill me-2 me-lg-4" alt="img_intro">
+                  <h3 class="mb-0 fs-7 fs-lg-6 fw-bold text-nowrap">破碎的菠蘿麵包</h3>
+                </div>
+              </li>
+              <li class="w-30 w-lg-10 text-end">
+                <p class="mb-0 fs-4"><span><i class="fa-brands fa-ethereum me-2"></i></span>888.88</p>
+              </li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block text-success">+20.49%</li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block text-primary">-0.43%</li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block">
+                <p class="mb-0 fs-4"><span><i class="fa-brands fa-ethereum me-2"></i></span>2.90</p>
+              </li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block">32.1K</li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block">1000</li>
+            </ul>
+          </button>
+        </p>
+        <div id="collapseSeven" class="accordion-collapse collapse d-lg-none" aria-labelledby="headingSeven" data-bs-parent="#accordionPrice">
+          <div class="accordion-body p-4 border-top border-black">
+            <ul class="row list-unstyled justify-content-center text-center mb-0">
+              <li class="col-4">
+                <p class="fs-7 font-Noto-Sans-TC">24h%</p>
+                <p class="fs-4 text-success">+20.49%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7 font-Noto-Sans-TC">7d%</p>
+                <p class="fs-4 text-primary">-0.43%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7 font-Noto-Sans-TC">地板價</p>
+                <p class="fs-4 mb-0"><span><i class="fa-brands fa-ethereum me-2"></i></span>2.90</p>
+              </li>
+              <li class="col-4 mt-4">
+                <p class="fs-7 font-Noto-Sans-TC">擁有者</p>
+                <p class="fs-4">32.1K</p>
+              </li>
+              <li class="col-4 mt-4">
+                <p class="fs-7 font-Noto-Sans-TC">作品數量</p>
+                <p class="fs-4">1000</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <!-- 8 -->
+      <li class="accordion-item border border-black -mt-xs-1">
+        <p class="accordion-header" id="headingEight">
+          <button class="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+            <ul class="list-unstyled w-100 d-flex justify-content-between align-items-center pe-2 pe-lg-6">
+              <li class="w-10 w-md-5 fs-3 font-Paytone-One text-center">8</li>
+              <li class="border-start border-black px-2 py-4 p-lg-4 flex-grow-1">
+                <div class="d-flex align-items-center">
+                  <img src="./assets/images/ranking6.jpg" width="48px" height="48px" class="img-fulid object-fix-cover rounded-pill me-2 me-lg-4" alt="img_intro">
+                  <h3 class="mb-0 fs-7 fs-lg-6 fw-bold text-nowrap">人生中的貓咪們</h3>
+                </div>
+              </li>
+              <li class="w-30 w-lg-10 text-end">
+                <p class="mb-0 fs-4"><span><i class="fa-brands fa-ethereum me-2"></i></span>770.23</p>
+              </li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block text-success">+32.49%</li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block text-success">+30.23</li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block">
+                <p class="mb-0 fs-4"><span><i class="fa-brands fa-ethereum me-2"></i></span>2.90</p>
+              </li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block">32.1K</li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block">1000</li>
+            </ul>
+          </button>
+        </p>
+        <div id="collapseEight" class="accordion-collapse collapse d-lg-none" aria-labelledby="headingEight" data-bs-parent="#accordionPrice">
+          <div class="accordion-body p-4 border-top border-black">
+            <ul class="row list-unstyled justify-content-center text-center mb-0">
+              <li class="col-4">
+                <p class="fs-7 font-Noto-Sans-TC">24h%</p>
+                <p class="fs-4 text-success">+32.49%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7 font-Noto-Sans-TC">7d%</p>
+                <p class="fs-4 text-success">+30.23</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7 font-Noto-Sans-TC">地板價</p>
+                <p class="fs-4 mb-0"><span><i class="fa-brands fa-ethereum me-2"></i></span>2.90</p>
+              </li>
+              <li class="col-4 mt-4">
+                <p class="fs-7 font-Noto-Sans-TC">擁有者</p>
+                <p class="fs-4">32.1K</p>
+              </li>
+              <li class="col-4 mt-4">
+                <p class="fs-7 font-Noto-Sans-TC">作品數量</p>
+                <p class="fs-4">1000</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <!-- 9 -->
+      <li class="accordion-item border border-black -mt-xs-1">
+        <p class="accordion-header" id="headingNine">
+          <button class="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+            <ul class="list-unstyled w-100 d-flex justify-content-between align-items-center pe-2 pe-lg-6">
+              <li class="w-10 w-md-5 fs-3 font-Paytone-One text-center">9</li>
+              <li class="border-start border-black px-2 py-4 p-lg-4 flex-grow-1">
+                <div class="d-flex align-items-center">
+                  <img src="./assets/images/price1.jpg" width="48px" height="48px" class="img-fulid object-fix-cover rounded-pill me-2 me-lg-4" alt="img_intro">
+                  <h3 class="mb-0 fs-7 fs-lg-6 fw-bold text-nowrap">髒兮兮的家</h3>
+                </div>
+              </li>
+              <li class="w-30 w-lg-10 text-end">
+                <p class="mb-0 fs-4"><span><i class="fa-brands fa-ethereum me-2"></i></span>502.31</p>
+              </li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block text-success">+13.49%</li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block text-success">+50.23</li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block">
+                <p class="mb-0 fs-4"><span><i class="fa-brands fa-ethereum me-2"></i></span>2.90</p>
+              </li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block">32.1K</li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block">1000</li>
+            </ul>
+          </button>
+        </p>
+        <div id="collapseNine" class="accordion-collapse collapse d-lg-none" aria-labelledby="headingNine" data-bs-parent="#accordionPrice">
+          <div class="accordion-body p-4 border-top border-black">
+            <ul class="row list-unstyled justify-content-center text-center mb-0">
+              <li class="col-4">
+                <p class="fs-7 font-Noto-Sans-TC">24h%</p>
+                <p class="fs-4 text-success">+13.49%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7 font-Noto-Sans-TC">7d%</p>
+                <p class="fs-4 text-success">+50.23</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7 font-Noto-Sans-TC">地板價</p>
+                <p class="fs-4 mb-0"><span><i class="fa-brands fa-ethereum me-2"></i></span>2.90</p>
+              </li>
+              <li class="col-4 mt-4">
+                <p class="fs-7 font-Noto-Sans-TC">擁有者</p>
+                <p class="fs-4">32.1K</p>
+              </li>
+              <li class="col-4 mt-4">
+                <p class="fs-7 font-Noto-Sans-TC">作品數量</p>
+                <p class="fs-4">1000</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <!-- 10 -->
+      <li class="accordion-item border border-black -mt-xs-1">
+        <p class="accordion-header" id="headingTen">
+          <button class="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+            <ul class="list-unstyled w-100 d-flex justify-content-between align-items-center pe-2 pe-lg-6">
+              <li class="w-10 w-md-5 fs-3 font-Paytone-One text-center">10</li>
+              <li class="border-start border-black px-2 py-4 p-lg-4 flex-grow-1">
+                <div class="d-flex align-items-center">
+                  <img src="./assets/images/ranking3.jpg" width="48px" height="48px" class="img-fulid object-fix-cover rounded-pill me-2 me-lg-4" alt="img_intro">
+                  <h3 class="mb-0 fs-7 fs-lg-6 fw-bold text-nowrap">細胞小將</h3>
+                </div>
+              </li>
+              <li class="w-30 w-lg-10 text-end">
+                <p class="mb-0 fs-4"><span><i class="fa-brands fa-ethereum me-2"></i></span>1,524.89</p>
+              </li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block text-success">+80.49%</li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block text-primary">-2.43%</li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block">
+                <p class="mb-0 fs-4"><span><i class="fa-brands fa-ethereum me-2"></i></span>2.90</p>
+              </li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block">32.1K</li>
+              <li class="w-10 fs-4 text-end d-none d-lg-block">1000</li>
+            </ul>
+          </button>
+        </p>
+        <div id="collapseTen" class="accordion-collapse collapse d-lg-none" aria-labelledby="headingTen" data-bs-parent="#accordionPrice">
+          <div class="accordion-body p-4 border-top border-black">
+            <ul class="row list-unstyled justify-content-center text-center mb-0">
+              <li class="col-4">
+                <p class="fs-7 font-Noto-Sans-TC">24h%</p>
+                <p class="fs-4 text-success">+54.49%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7 font-Noto-Sans-TC">7d%</p>
+                <p class="fs-4 text-primary">-12.43%</p>
+              </li>
+              <li class="col-4">
+                <p class="fs-7 font-Noto-Sans-TC">地板價</p>
+                <p class="fs-4 mb-0"><span><i class="fa-brands fa-ethereum me-2"></i></span>2.90</p>
+              </li>
+              <li class="col-4 mt-4">
+                <p class="fs-7 font-Noto-Sans-TC">擁有者</p>
+                <p class="fs-4">32.1K</p>
+              </li>
+              <li class="col-4 mt-4">
+                <p class="fs-7 font-Noto-Sans-TC">作品數量</p>
+                <p class="fs-4">1000</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    
+
+  </div>
+</section>

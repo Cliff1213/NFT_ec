@@ -195,6 +195,8 @@ $utilities: map-merge(
       property: width,
       class: w,
       values: (
+        5: 5%,
+        10: 10%,
         25: 25%,
         50: 50%,
         75: 75%,
@@ -230,6 +232,7 @@ $utilities: map-merge(
       class: font,
       values: (
         "Noto-Sans-TC": "Noto Sans TC",
+        "Paytone-One": "Paytone One",
       )
     ),
     "z-index": (
