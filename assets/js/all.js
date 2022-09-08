@@ -45,10 +45,12 @@ var indexSwiper = new Swiper(".index-swiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true
-  }
+  },
+  grabCursor: true
 }); // swiper of intro
 
 var introSwiper = new Swiper(".intro-swiper", {
+  // loop + link = bug
   loop: true,
   speed: 500,
   autoplay: {
@@ -66,7 +68,8 @@ var introSwiper = new Swiper(".intro-swiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true
-  }
+  },
+  grabCursor: true
 }); // masonry
 
 $('.tab-masonry').on('shown.bs.tab', function () {
