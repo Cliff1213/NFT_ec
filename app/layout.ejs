@@ -83,14 +83,81 @@
             </li>
             <li class="nav-item border-start-lg border-lg-dark mb-6 mb-lg-0">
 
-              <a href="javascript:;"><i class="fa-solid fa-wallet nav-link fs-3 text-black pe-0 py-lg-10 ps-lg-10 d-none d-lg-inline-block"></i></a>
+              <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#modalNavbar"><i class="fa-solid fa-wallet nav-link fs-3 text-black pe-0 py-lg-10 ps-lg-10 d-none d-lg-inline-block"></i></a>
 
-              <a href="javascript:;" class="btn border-black text-white fs-5 fs-lg-6 bg-primary rounded-0 w-100 py-3 d-lg-none">連結錢包</a>
+              <a href="javascript:;" class="btn border-black text-white fs-5 fs-lg-6 bg-primary rounded-0 w-100 py-3 d-lg-none" data-bs-toggle="modal" data-bs-target="#modalNavbar">連結錢包</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
+    <!-- 連結錢包 Modal -->
+    <div class="modal fade" id="modalNavbar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen-md-down">
+        <div class="modal-content">
+          <div class="modal-header border-black">
+            <div class="position-relative w-100">
+              <h5 class="modal-title text-center fs-4" id="modalNavbarHeading">連結你的錢包</h5>
+              <div class="position-absolute top-50 end-0 translate-middle-y">
+                <button type="button" class="btn-close d-block" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            </div>
+          </div>
+          <div class="modal-body px-3 pb-0 px-md-3">
+            <div class="container-fluid">
+              <ul class="modal-list row list-unstyled mb-0">
+
+                <li class="col-md-6 px-0 px-md-1 mb-2 cursor-pointer">
+                  <div class="link-item d-flex align-items-center border border-black p-4">
+                    <img src="./assets/images/connect1.png" class="me-4" width="16px" height="16px" alt="img_metaMask">
+                    <p>MetaMask</p>
+                  </div>
+                </li>
+
+                <li class="col-md-6 px-0 px-md-1 mb-2 cursor-pointer">
+                  <div class="link-item d-flex align-items-center border border-black p-4">
+                    <img src="./assets/images/connect2.png" class="me-4" width="16px" height="16px" alt="img_metaMask">
+                    <p>Coinbase Wallet</p>
+                  </div>
+                </li>
+
+                <li class="col-md-6 px-0 px-md-1 mb-2 cursor-pointer">
+                  <div class="link-item d-flex align-items-center border border-black p-4">
+                    <img src="./assets/images/connect3.png" class="me-4" width="16px" height="16px" alt="img_metaMask">
+                    <p>WalletConnect</p>
+                  </div>
+                </li>
+
+                <li class="col-md-6 px-0 px-md-1 mb-2 cursor-pointer">
+                  <div class="link-item d-flex align-items-center border border-black p-4">
+                    <img src="./assets/images/connect4.png" class="me-4" width="16px" height="16px" alt="img_metaMask">
+                    <p>Phantom</p>
+                  </div>
+                </li>
+
+                <li class="col-md-6 px-0 px-md-1 mb-2 mb-md-0 cursor-pointer">
+                  <div class="link-item d-flex align-items-center border border-black p-4">
+                    <img src="./assets/images/connect5.png" class="me-4" width="16px" height="16px" alt="img_metaMask">
+                    <p>Glow</p>
+                  </div>
+                </li>
+
+                <li class="col-md-6 px-0 px-md-1 mb-2 mb-md-0 cursor-pointer">
+                  <div class="link-item d-flex align-items-center border border-black p-4">
+                    <img src="./assets/images/connect6.png" class="me-4" width="16px" height="16px" alt="img_metaMask">
+                    <p>Fortmatic</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer p-0 p-md-6 border-0">
+            <button type="button" class="btn btn-primary fs-5 text-white border-black w-100 w-md-auto py-3 py-md-2 px-md-12 mx-auto m-0">連結錢包</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <%- contents %>
 

@@ -3,6 +3,7 @@ const btnSearch = document.querySelector('.btn-search-mobile');
 const inputSearch = document.querySelector('.input-search-mobile');
 const btnBack = document.querySelector('.btn-back');
 const navCollapse = document.querySelector('.navbar-collapse');
+const filterOffcanvas = document.querySelector('.filter-offcanvas');
 
 btnSearch.addEventListener('click', () => {
   navCollapse.classList.remove('show');
@@ -12,15 +13,32 @@ btnSearch.addEventListener('click', () => {
 window.addEventListener('resize', () => {
   let viewWidth = document.documentElement.clientWidth;
   // console.log(viewWidth);
-
+  
+  
   if(viewWidth > 992) {
     inputSearch.classList.add('d-none');
+
+    // 收合 offcanvas
+    $('.filter-offcanvas').offcanvas('hide');
   }
 })
+
 
 btnBack.addEventListener('click', () => {
   inputSearch.classList.add('d-none');
 })
+
+
+// 錢包連結
+const modalList = document.querySelector('.modal-list');
+const modalListGroup = document.querySelectorAll('.modal-list .link-item');
+
+modalList.addEventListener('click', (e) => {
+
+  modalListGroup.forEach((i) => i.classList.remove('item-check'));
+  e.target.closest('.link-item').classList.add('item-check');
+})
+
 
 // swiper of index
 const indexSwiper = new Swiper(".index-swiper", {
@@ -78,12 +96,23 @@ const introSwiper = new Swiper(".intro-swiper", {
 
 
 
-// masonry
+// masonry（use jQ）
+// artwork 收藏品 tag 切換時
 $('.tab-masonry').on('shown.bs.tab', function () {
   let msnry = Masonry.data($('.row-masonry')[0]);
   $('.row-masonry').imagesLoaded(function () {
     msnry.layout();
   });
+});
+// intro 元件 collapse 摺疊收合時
+$('.collapse-masonry').on('hidden.bs.collapse', function () {
+  let msnry = Masonry.data($('.row-masonry')[0]);
+  msnry.layout();
+});
+// intro 元件 collapse 展開時
+$('.collapse-masonry').on('shown.bs.collapse', function () {
+  let msnry = Masonry.data($('.row-masonry')[0]);
+  msnry.layout();
 });
 
 

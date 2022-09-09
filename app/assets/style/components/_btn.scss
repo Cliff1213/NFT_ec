@@ -34,3 +34,20 @@
     transition: .3s;
   }
 }
+
+
+// 按鈕打勾裝飾
+.item-check {
+  border: 2px solid $primary !important;
+  position: relative;
+  margin: -1px !important;
+  &::after {
+    content: "\f00c";
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $primary;
+    font-family: FontAwesome;
+  }
+}

@@ -246,6 +246,13 @@ $utilities: map-merge(
         none: none
       )
     ),
+    "cursor": (
+      property: cursor,
+      class: cursor,
+      values: (
+        pointer: pointer,
+      )
+    )
   )
 );
 
