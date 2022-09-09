@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta property="og:title" content="ART NFT，NFT 藝術交易平台">
+    <meta property="og:description" content="電商網站切版練習">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="圖片">
+
+    <link rel="shortcut icon" href="./assets/images/logo_xs.png" type="image/x-icon">
+
+    <title>探索－ART NFT｜NFT 藝術交易平台</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Paytone+One&family=Squada+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body class="bg-secondary pt-12-l pt-lg-26">
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg border-bottom-lg border-lg-dark bg-secondary py-0 fixed-top overflow-hidden">
+      <div class="container-lg px-0 px-lg-3">
+
+        <!-- 手機版搜尋區塊 -->
+        <div class="input-search-mobile d-none position-absolute top-50 start-0 translate-middle-y w-100 h-100 d-flex align-items-center bg-secondary">
+          <div class="container-lg">
+            <form class="navbar-mobile-search d-flex justify-content-between align-items-center w-100 d-lg-none">
+              <button class="btn-back btn p-1 me-4" type="button">
+                <i class="fa-solid fa-angle-left fs-5 text-black d-flex align-items-center"></i>
+              </button>
+
+              <input class="navbar-mobile-input form-control border-0 bg-secondary lh-1" type="search" placeholder="搜尋作品名稱、藝術家名稱" aria-label="Search">
+              <button class="btn p-1 ms-4" type="button">
+                <i class="fa-sharp fa-solid fa-magnifying-glass fs-5 text-black d-flex align-items-center"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Logo -->
+        <h1 class="mb-0 py-4 navbar-brand lh-0 ps-3 ps-lg-0">
+          <a class="navbar-logo" href="./index.html">ART NFT</a>
+        </h1>
+
+        <!-- 下拉圖示 -->
+        <div class="d-flex pe-3 pe-lg-0">
+          <form class="navbar-mobile-search d-flex justify-content-between d-lg-none">
+            <button class="btn-search-mobile btn p-1" type="button">
+              <i class="fa-sharp fa-solid fa-magnifying-glass fs-5 text-black d-flex align-items-center"></i>
+            </button>
+          </form>
+          <button class="navbar-toggler p-0 ms-6" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars fs-3 text-black d-flex align-items-center px-1"></i>
+          </button>
+        </div>
+
+        <!-- 列表項目 -->
+        <div class="collapse navbar-collapse flex-grow-0 bg-white bg-lg-secondary" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-lg-0 border-start-lg border-lg-dark text-center px-3 px-lg-0">
+            <li class="px-lg-12 py-0 d-none d-lg-flex align-items-lg-center">
+              <form class="d-flex">
+                <input class="form-control border-0 me-6 bg-transparent lh-1" type="search" placeholder="搜尋作品名稱、藝術家名稱" aria-label="Search" style="min-width: 288px;">
+                <button class="btn p-0" type="button">
+                  <i class="nav-icon fa-sharp fa-solid fa-magnifying-glass fs-3 text-black d-flex align-items-center"></i>
+                </button>
+              </form>
+            </li>
+            <li class="nav-item border-start-lg border-lg-dark">
+              <a href="./explore.html" class="nav-link text-black fs-5 fs-lg-6 fw-bold py-6 p-lg-10 border-bottom border-bottom-lg-0 border-black active" aria-current="page">探索</a>
+            </li>
+            <li class="nav-item border-start-lg border-lg-dark">
+              <a class="nav-link text-black fs-5 fs-lg-6 fw-bold py-6 p-lg-10" href="./price.html">市值</a>
+            </li>
+            <li class="nav-item border-start-lg border-lg-dark mb-6 mb-lg-0">
+
+              <a href="javascript:;"><i class="fa-solid fa-wallet nav-link fs-3 text-black pe-0 py-lg-10 ps-lg-10 d-none d-lg-inline-block"></i></a>
+
+              <a href="javascript:;" class="btn border-black text-white fs-5 fs-lg-6 bg-primary rounded-0 w-100 py-3 d-lg-none">連結錢包</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    
+<section class="explore mt-6 mb-10 mt-lg-10 mb-lg-20">
+  <div class="container">
+    <ul class="row row-masonry list-unstyled mb-0" data-masonry='{"percentPosition": true }'>
+
+      <!-- 1 -->
+      <li class="col-6 col-lg-3 mb-4 mb-lg-12">
+        <div class="card border-0 bg-transparent">
+          <div class="card-img bg-white p-2 p-xl-6">
+            <div class="img-info">
+              <a href="./intro.html">
+                <img src="./assets/images/artwork1.jpg" class="card-img-top object-fix-cover h-lg-254" height="139px" alt="img_artwork">
+              </a>
+              <div class="img-info-background d-none d-lg-block">
+                <div class="img-info-content">
+                  <div>
+                    <p class="mb-2">唯一想擁有的人，唯一不可以擁有的</p>
+                    <div class="d-flex align-items-center">
+                      <i class="fa-brands fa-ethereum me-2"></i>
+                      <p class="mb-0">300</p>
+                    </div>
+                  </div>
+                  <div class="card-btn align-self-end">
+                    <a href="./intro.html">
+                      <button type="button" class="btn-decoration">MORE</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body border-bottom-lg border-lg-black p-2 px-lg-0 py-lg-4">
+            <h4 class="card-text fs-7 fs-lg-6 fw-lg-bold">區塊戀-他的私生活</h4>
+          </div>
+        </div>
+      </li>
+      
+      <!-- 2 -->
+      <li class="col-6 col-lg-3 mb-4 mb-lg-12">
+        <div class="card border-0 bg-transparent">
+          <div class="card-img bg-white p-2 p-xl-6">
+            <div class="img-info">
+              <a href="./intro.html">
+                <img src="./assets/images/artwork2.jpg" class="card-img-top object-fix-cover h-lg-327" height="151px" alt="img_artwork">
+              </a>
+              <div class="img-info-background d-none d-lg-block">
+                <div class="img-info-content">
+                  <div>
+                    <p class="mb-2">唯一想擁有的人，唯一不可以擁有的</p>
+                    <div class="d-flex align-items-center">
+                      <i class="fa-brands fa-ethereum me-2"></i>
+                      <p class="mb-0">300</p>
+                    </div>
+                  </div>
+                  <div class="card-btn align-self-end">
+                    <a href="./intro.html">
+                      <button type="button" class="btn-decoration">MORE</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body border-bottom-lg border-lg-black p-2 px-lg-0 py-lg-4">
+            <h4 class="card-text fs-7 fs-lg-6 fw-lg-bold">夏娃的醜聞</h4>
+          </div>
+        </div>
+      </li>
+
+      <!-- 3 -->
+      <li class="col-6 col-lg-3 mb-4 mb-lg-12">
+        <div class="card border-0 bg-transparent">
+          <div class="card-img bg-white p-2 p-xl-6">
+            <div class="img-info">
+              <a href="./intro.html">
+                <img src="./assets/images/banner2.jpg" class="card-img-top object-fix-cover h-lg-254" height="93px" alt="img_artwork">
+              </a>
+              <div class="img-info-background d-none d-lg-block">
+                <div class="img-info-content">
+                  <div>
+                    <p class="mb-2">唯一想擁有的人，唯一不可以擁有的</p>
+                    <div class="d-flex align-items-center">
+                      <i class="fa-brands fa-ethereum me-2"></i>
+                      <p class="mb-0">300</p>
+                    </div>
+                  </div>
+                  <div class="card-btn align-self-end">
+                    <a href="./intro.html">
+                      <button type="button" class="btn-decoration">MORE</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body border-bottom-lg border-lg-black p-2 px-lg-0 py-lg-4">
+            <h4 class="card-text fs-7 fs-lg-6 fw-lg-bold">藍色啤酒海</h4>
+          </div>
+        </div>
+      </li>
+
+      <!-- 4 -->
+      <li class="col-6 col-lg-3 mb-4 mb-lg-12">
+        <div class="card border-0 bg-transparent">
+          <div class="card-img bg-white p-2 p-xl-6">
+            <div class="img-info">
+              <a href="./intro.html">
+                <img src="./assets/images/artwork4.jpg" class="card-img-top object-fix-cover h-lg-220" height="173px" alt="img_artwork">
+              </a>
+              <div class="img-info-background d-none d-lg-block">
+                <div class="img-info-content">
+                  <div>
+                    <p class="mb-2">唯一想擁有的人，唯一不可以擁有的</p>
+                    <div class="d-flex align-items-center">
+                      <i class="fa-brands fa-ethereum me-2"></i>
+                      <p class="mb-0">300</p>
+                    </div>
+                  </div>
+                  <div class="card-btn align-self-end">
+                    <a href="./intro.html">
+                      <button type="button" class="btn-decoration">MORE</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body border-bottom-lg border-lg-black p-2 px-lg-0 py-lg-4">
+            <h4 class="card-text fs-7 fs-lg-6 fw-lg-bold">沒有人愛我</h4>
+          </div>
+        </div>
+      </li>
+
+      <!-- 5 -->
+      <li class="col-6 col-lg-3 mb-4 mb-lg-12">
+        <div class="card border-0 bg-transparent">
+          <div class="card-img bg-white p-2 p-xl-6">
+            <div class="img-info">
+              <a href="./intro.html">
+                <img src="./assets/images/artwork8.jpg" class="card-img-top object-fix-cover h-lg-254" height="185px" alt="img_artwork">
+              </a>
+              <div class="img-info-background d-none d-lg-block">
+                <div class="img-info-content">
+                  <div>
+                    <p class="mb-2">唯一想擁有的人，唯一不可以擁有的</p>
+                    <div class="d-flex align-items-center">
+                      <i class="fa-brands fa-ethereum me-2"></i>
+                      <p class="mb-0">300</p>
+                    </div>
+                  </div>
+                  <div class="card-btn align-self-end">
+                    <a href="./intro.html">
+                      <button type="button" class="btn-decoration">MORE</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body border-bottom-lg border-lg-black p-2 px-lg-0 py-lg-4">
+            <h4 class="card-text fs-7 fs-lg-6 fw-lg-bold">我真的受傷了</h4>
+          </div>
+        </div>
+      </li>
+
+
+      <!-- 6 -->
+      <li class="col-6 col-lg-3 mb-4 mb-lg-12">
+        <div class="card border-0 bg-transparent">
+          <div class="card-img bg-white p-2 p-xl-6">
+            <div class="img-info">
+              <a href="./intro.html">
+                <img src="./assets/images/artwork5.jpg" class="card-img-top object-fix-cover h-lg-220" height="192px" alt="img_artwork">
+              </a>
+              <div class="img-info-background d-none d-lg-block">
+                <div class="img-info-content">
+                  <div>
+                    <p class="mb-2">唯一想擁有的人，唯一不可以擁有的</p>
+                    <div class="d-flex align-items-center">
+                      <i class="fa-brands fa-ethereum me-2"></i>
+                      <p class="mb-0">300</p>
+                    </div>
+                  </div>
+                  <div class="card-btn align-self-end">
+                    <a href="./intro.html">
+                      <button type="button" class="btn-decoration">MORE</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body border-bottom-lg border-lg-black p-2 px-lg-0 py-lg-4">
+            <h4 class="card-text fs-7 fs-lg-6 fw-lg-bold">不哭不哭眼淚是珍珠</h4>
+          </div>
+        </div>
+      </li>
+
+      <!-- 7 -->
+      <li class="col-6 col-lg-3 mb-4 mb-lg-12">
+        <div class="card border-0 bg-transparent">
+          <div class="card-img bg-white p-2 p-xl-6">
+            <div class="img-info">
+              <a href="./intro.html">
+                <img src="./assets/images/ranking1.jpg" class="card-img-top object-fix-cover h-lg-395" height="139px" alt="img_artwork">
+              </a>
+              <div class="img-info-background d-none d-lg-block">
+                <div class="img-info-content">
+                  <div>
+                    <p class="mb-2">唯一想擁有的人，唯一不可以擁有的</p>
+                    <div class="d-flex align-items-center">
+                      <i class="fa-brands fa-ethereum me-2"></i>
+                      <p class="mb-0">300</p>
+                    </div>
+                  </div>
+                  <div class="card-btn align-self-end">
+                    <a href="./intro.html">
+                      <button type="button" class="btn-decoration">MORE</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body border-bottom-lg border-lg-black p-2 px-lg-0 py-lg-4">
+            <h4 class="card-text fs-7 fs-lg-6 fw-lg-bold">我這樣有美嗎</h4>
+          </div>
+        </div>
+      </li>
+
+      <!-- 8 -->
+      <li class="col-6 col-lg-3 mb-4 mb-lg-12">
+        <div class="card border-0 bg-transparent">
+          <div class="card-img bg-white p-2 p-xl-6">
+
+            <div class="img-info">
+              <a href="./intro.html">
+                <img src="./assets/images/artwork6.jpg" class="card-img-top object-fix-cover h-lg-254" height="99px" alt="img_artwork">
+              </a>
+              <div class="img-info-background d-none d-lg-block">
+                <div class="img-info-content">
+                  <div>
+                    <p class="mb-2">唯一想擁有的人，唯一不可以擁有的</p>
+                    <div class="d-flex align-items-center">
+                      <i class="fa-brands fa-ethereum me-2"></i>
+                      <p class="mb-0">300</p>
+                    </div>
+                  </div>
+                  <div class="card-btn align-self-end">
+                    <a href="./intro.html">
+                      <button type="button" class="btn-decoration">MORE</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body border-bottom-lg border-lg-black p-2 px-lg-0 py-lg-4">
+            <h4 class="card-text fs-7 fs-lg-6 fw-lg-bold">十分鐘就到</h4>
+          </div>
+        </div>
+      </li>
+
+      <!-- 9 -->
+      <li class="col-6 col-lg-3 mb-4 mb-lg-0">
+        <div class="card border-0 bg-transparent">
+          <div class="card-img bg-white p-2 p-xl-6">
+
+            <div class="img-info">
+              <a href="./intro.html">
+                <img src="./assets/images/explore1.jpg" class="card-img-top object-fix-cover h-lg-334" height="173px" alt="img_artwork">
+              </a>
+              <div class="img-info-background d-none d-lg-block">
+                <div class="img-info-content">
+                  <div>
+                    <p class="mb-2">唯一想擁有的人，唯一不可以擁有的</p>
+                    <div class="d-flex align-items-center">
+                      <i class="fa-brands fa-ethereum me-2"></i>
+                      <p class="mb-0">300</p>
+                    </div>
+                  </div>
+                  <div class="card-btn align-self-end">
+                    <a href="./intro.html">
+                      <button type="button" class="btn-decoration">MORE</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body border-bottom-lg border-lg-black p-2 px-lg-0 py-lg-4">
+            <h4 class="card-text fs-7 fs-lg-6 fw-lg-bold">野小孩——叫你不要玩那個</h4>
+          </div>
+        </div>
+      </li>
+
+      <!-- 10 -->
+      <li class="col-6 col-lg-3 mb-4 mb-lg-0">
+        <div class="card border-0 bg-transparent">
+          <div class="card-img bg-white p-2 p-xl-6">
+
+            <div class="img-info">
+              <a href="./intro.html">
+                <img src="./assets/images/ranking3.jpg" class="card-img-top object-fix-cover h-lg-340" height="160px" alt="img_artwork">
+              </a>
+              <div class="img-info-background d-none d-lg-block">
+                <div class="img-info-content">
+                  <div>
+                    <p class="mb-2">唯一想擁有的人，唯一不可以擁有的</p>
+                    <div class="d-flex align-items-center">
+                      <i class="fa-brands fa-ethereum me-2"></i>
+                      <p class="mb-0">300</p>
+                    </div>
+                  </div>
+                  <div class="card-btn align-self-end">
+                    <a href="./intro.html">
+                      <button type="button" class="btn-decoration">MORE</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body border-bottom-lg border-lg-black p-2 px-lg-0 py-lg-4">
+            <h4 class="card-text fs-7 fs-lg-6 fw-lg-bold">每當夏天我吹著溫暖的風</h4>
+          </div>
+        </div>
+      </li>
+
+      <!-- 11 -->
+      <li class="col-6 col-lg-3">
+        <div class="card border-0 bg-transparent">
+          <div class="card-img bg-white p-2 p-xl-6">
+
+            <div class="img-info">
+              <a href="./intro.html">
+                <img src="./assets/images/price2.jpg" class="card-img-top object-fix-cover h-lg-254" height="99px" alt="img_artwork">
+              </a>
+              <div class="img-info-background d-none d-lg-block">
+                <div class="img-info-content">
+                  <div>
+                    <p class="mb-2">唯一想擁有的人，唯一不可以擁有的</p>
+                    <div class="d-flex align-items-center">
+                      <i class="fa-brands fa-ethereum me-2"></i>
+                      <p class="mb-0">300</p>
+                    </div>
+                  </div>
+                  <div class="card-btn align-self-end">
+                    <a href="./intro.html">
+                      <button type="button" class="btn-decoration">MORE</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body border-bottom-lg border-lg-black p-2 px-lg-0 py-lg-4">
+            <h4 class="card-text fs-7 fs-lg-6 fw-lg-bold">柔美的細胞小將</h4>
+          </div>
+        </div>
+      </li>
+
+      <!-- 12 -->
+      <li class="col-6 col-lg-3">
+        <div class="card border-0 bg-transparent">
+          <div class="card-img bg-white p-2 p-xl-6">
+
+            <div class="img-info">
+              <a href="./intro.html">
+                <img src="./assets/images/explore2.jpg" class="card-img-top object-fix-cover h-lg-327" height="174px" alt="img_artwork">
+              </a>
+              <div class="img-info-background d-none d-lg-block">
+                <div class="img-info-content">
+                  <div>
+                    <p class="mb-2">唯一想擁有的人，唯一不可以擁有的</p>
+                    <div class="d-flex align-items-center">
+                      <i class="fa-brands fa-ethereum me-2"></i>
+                      <p class="mb-0">300</p>
+                    </div>
+                  </div>
+                  <div class="card-btn align-self-end">
+                    <a href="./intro.html">
+                      <button type="button" class="btn-decoration">MORE</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body border-bottom-lg border-lg-black p-2 px-lg-0 py-lg-4">
+            <h4 class="card-text fs-7 fs-lg-6 fw-lg-bold">心如止水——今天吃素</h4>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <!-- 頁尾 -->
+    <footer class="footer border-top border-black text-center pt-2">
+      <div class="py-6 border-4 border-top border-black">
+        <p class="mb-0">© ART NFT. All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+
+
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
