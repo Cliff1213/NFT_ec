@@ -7620,7 +7620,7 @@ fieldset:disabled .btn {
 .offcanvas-start {
   top: 0;
   left: 0;
-  width: 100%;
+  width: 576px;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
   -webkit-transform: translateX(-100%);
       -ms-transform: translateX(-100%);
@@ -7630,7 +7630,7 @@ fieldset:disabled .btn {
 .offcanvas-end {
   top: 0;
   right: 0;
-  width: 100%;
+  width: 576px;
   border-left: 1px solid rgba(0, 0, 0, 0.2);
   -webkit-transform: translateX(100%);
       -ms-transform: translateX(100%);
@@ -10420,6 +10420,10 @@ fieldset:disabled .btn {
 
 .z-none {
   z-index: none !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
 }
 
 @media (min-width: 576px) {
@@ -18643,6 +18647,24 @@ fieldset:disabled .btn {
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
+}
+
+.item-check {
+  border: 2px solid #E6553B !important;
+  position: relative;
+  margin: -1px !important;
+}
+
+.item-check::after {
+  content: "\f00c";
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #E6553B;
+  font-family: FontAwesome;
 }
 
 .card-number-1 {

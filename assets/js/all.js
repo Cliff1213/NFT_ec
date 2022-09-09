@@ -5,6 +5,7 @@ var btnSearch = document.querySelector('.btn-search-mobile');
 var inputSearch = document.querySelector('.input-search-mobile');
 var btnBack = document.querySelector('.btn-back');
 var navCollapse = document.querySelector('.navbar-collapse');
+var filterOffcanvas = document.querySelector('.filter-offcanvas');
 btnSearch.addEventListener('click', function () {
   navCollapse.classList.remove('show');
   inputSearch.classList.remove('d-none');
@@ -13,11 +14,22 @@ window.addEventListener('resize', function () {
   var viewWidth = document.documentElement.clientWidth; // console.log(viewWidth);
 
   if (viewWidth > 992) {
-    inputSearch.classList.add('d-none');
+    inputSearch.classList.add('d-none'); // 收合 offcanvas
+
+    $('.filter-offcanvas').offcanvas('hide');
   }
 });
 btnBack.addEventListener('click', function () {
   inputSearch.classList.add('d-none');
+}); // 錢包連結
+
+var modalList = document.querySelector('.modal-list');
+var modalListGroup = document.querySelectorAll('.modal-list .link-item');
+modalList.addEventListener('click', function (e) {
+  modalListGroup.forEach(function (i) {
+    return i.classList.remove('item-check');
+  });
+  e.target.closest('.link-item').classList.add('item-check');
 }); // swiper of index
 
 var indexSwiper = new Swiper(".index-swiper", {
@@ -70,13 +82,24 @@ var introSwiper = new Swiper(".intro-swiper", {
     clickable: true
   },
   grabCursor: true
-}); // masonry
+}); // masonry（use jQ）
+// artwork 收藏品 tag 切換時
 
 $('.tab-masonry').on('shown.bs.tab', function () {
   var msnry = Masonry.data($('.row-masonry')[0]);
   $('.row-masonry').imagesLoaded(function () {
     msnry.layout();
   });
+}); // intro 元件 collapse 摺疊收合時
+
+$('.collapse-masonry').on('hidden.bs.collapse', function () {
+  var msnry = Masonry.data($('.row-masonry')[0]);
+  msnry.layout();
+}); // intro 元件 collapse 展開時
+
+$('.collapse-masonry').on('shown.bs.collapse', function () {
+  var msnry = Masonry.data($('.row-masonry')[0]);
+  msnry.layout();
 }); // aos
 
 AOS.init({

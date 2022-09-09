@@ -83,14 +83,81 @@
             </li>
             <li class="nav-item border-start-lg border-lg-dark mb-6 mb-lg-0">
 
-              <a href="javascript:;"><i class="fa-solid fa-wallet nav-link fs-3 text-black pe-0 py-lg-10 ps-lg-10 d-none d-lg-inline-block"></i></a>
+              <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#modalNavbar"><i class="fa-solid fa-wallet nav-link fs-3 text-black pe-0 py-lg-10 ps-lg-10 d-none d-lg-inline-block"></i></a>
 
-              <a href="javascript:;" class="btn border-black text-white fs-5 fs-lg-6 bg-primary rounded-0 w-100 py-3 d-lg-none">連結錢包</a>
+              <a href="javascript:;" class="btn border-black text-white fs-5 fs-lg-6 bg-primary rounded-0 w-100 py-3 d-lg-none" data-bs-toggle="modal" data-bs-target="#modalNavbar">連結錢包</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
+    <!-- 連結錢包 Modal -->
+    <div class="modal fade" id="modalNavbar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen-md-down">
+        <div class="modal-content">
+          <div class="modal-header border-black">
+            <div class="position-relative w-100">
+              <h5 class="modal-title text-center fs-4" id="modalNavbarHeading">連結你的錢包</h5>
+              <div class="position-absolute top-50 end-0 translate-middle-y">
+                <button type="button" class="btn-close d-block" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            </div>
+          </div>
+          <div class="modal-body px-3 pb-0 px-md-3">
+            <div class="container-fluid">
+              <ul class="modal-list row list-unstyled mb-0">
+
+                <li class="col-md-6 px-0 px-md-1 mb-2 cursor-pointer">
+                  <div class="link-item d-flex align-items-center border border-black p-4">
+                    <img src="./assets/images/connect1.png" class="me-4" width="16px" height="16px" alt="img_metaMask">
+                    <p>MetaMask</p>
+                  </div>
+                </li>
+
+                <li class="col-md-6 px-0 px-md-1 mb-2 cursor-pointer">
+                  <div class="link-item d-flex align-items-center border border-black p-4">
+                    <img src="./assets/images/connect2.png" class="me-4" width="16px" height="16px" alt="img_metaMask">
+                    <p>Coinbase Wallet</p>
+                  </div>
+                </li>
+
+                <li class="col-md-6 px-0 px-md-1 mb-2 cursor-pointer">
+                  <div class="link-item d-flex align-items-center border border-black p-4">
+                    <img src="./assets/images/connect3.png" class="me-4" width="16px" height="16px" alt="img_metaMask">
+                    <p>WalletConnect</p>
+                  </div>
+                </li>
+
+                <li class="col-md-6 px-0 px-md-1 mb-2 cursor-pointer">
+                  <div class="link-item d-flex align-items-center border border-black p-4">
+                    <img src="./assets/images/connect4.png" class="me-4" width="16px" height="16px" alt="img_metaMask">
+                    <p>Phantom</p>
+                  </div>
+                </li>
+
+                <li class="col-md-6 px-0 px-md-1 mb-2 mb-md-0 cursor-pointer">
+                  <div class="link-item d-flex align-items-center border border-black p-4">
+                    <img src="./assets/images/connect5.png" class="me-4" width="16px" height="16px" alt="img_metaMask">
+                    <p>Glow</p>
+                  </div>
+                </li>
+
+                <li class="col-md-6 px-0 px-md-1 mb-2 mb-md-0 cursor-pointer">
+                  <div class="link-item d-flex align-items-center border border-black p-4">
+                    <img src="./assets/images/connect6.png" class="me-4" width="16px" height="16px" alt="img_metaMask">
+                    <p>Fortmatic</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer p-0 p-md-6 border-0">
+            <button type="button" class="btn btn-primary fs-5 text-white border-black w-100 w-md-auto py-3 py-md-2 px-md-12 mx-auto m-0">連結錢包</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     
 <section class="intro pt-6 pt-lg-10 mb-10">
@@ -121,7 +188,7 @@
                 </div>
               </div>
   
-              <a href="javascript:;" class="btn bg-primary text-white fs-5 py-2 px-12 border-black">出價</a>
+              <a href="./filter.html" class="btn bg-primary text-white fs-5 py-2 px-12 border-black">出價</a>
             </div>
           </div>
 
@@ -142,17 +209,17 @@
         <div class="card border-0 bg-transparent">
           <div class="accordion" id="introAttr">
             <div class="accordion-item border border-black">
-              <h2 class="accordion-header border-bottom border-black" id="introHeading1">
+              <h2 class="accordion-header" id="introHeading1">
                 <button class="accordion-button fw-bold p-4 p-lg-6" type="button" data-bs-toggle="collapse" data-bs-target="#introCollapse1" aria-expanded="true" aria-controls="introCollapse1">
                   屬性
                 </button>
               </h2>
-              <div id="introCollapse1" class="accordion-collapse collapse show" aria-labelledby="introHeading1">
-                <div class="accordion-body px-4 py-6 p-lg-6">
+              <div id="introCollapse1" class="collapse-masonry accordion-collapse collapse show" aria-labelledby="introHeading1">
+                <div class="accordion-body border-top border-black px-4 py-6 p-lg-6">
                   <ul class="list-unstyled">
                     <li class="d-flex justify-content-between mb-4">
                       <p>品種</p>
-                      <p class="text-gray-light">青藍金剛鸚鵡</p>
+                      <p class="text-gray-light">青藍金剛collapse-masonry 鸚鵡</p>
                     </li>
                     <li class="d-flex justify-content-between mb-4">
                       <p>鳥的數量</p>
@@ -179,13 +246,13 @@
         <div class="card border-0 bg-transparent">
           <div class="accordion" id="introPrice">
             <div class="accordion-item border border-black">
-              <h2 class="accordion-header border-bottom border-black" id="introHeading2">
+              <h2 class="accordion-header" id="introHeading2">
                 <button class="accordion-button fw-bold p-4 p-lg-6" type="button" data-bs-toggle="collapse" data-bs-target="#introCollapse2" aria-expanded="true" aria-controls="introCollapse2">
                   出價
                 </button>
               </h2>
-              <div id="introCollapse2" class="accordion-collapse collapse show" aria-labelledby="introHeading2">
-                <div class="accordion-body px-4 py-6 p-lg-6">
+              <div id="introCollapse2" class="collapse-masonry accordion-collapse collapse show" aria-labelledby="introHeading2">
+                <div class="accordion-body border-top border-black px-4 py-6 p-lg-6">
 
                   <table class="table table-borderless mb-0">
                     <thead class="bg-light text-center">
@@ -239,13 +306,13 @@
         <div class="card border-0 bg-transparent">
           <div class="accordion" id="introInfo">
             <div class="accordion-item border border-black">
-              <h2 class="accordion-header border-bottom border-black" id="introHeading3">
+              <h2 class="accordion-header" id="introHeading3">
                 <button class="accordion-button fw-bold p-4 p-lg-6" type="button" data-bs-toggle="collapse" data-bs-target="#introCollapse3" aria-expanded="true" aria-controls="introCollapse3">
                   基本資訊
                 </button>
               </h2>
-              <div id="introCollapse3" class="accordion-collapse collapse show" aria-labelledby="introHeading3">
-                <div class="accordion-body px-4 py-6 p-lg-6">
+              <div id="introCollapse3" class="collapse-masonry accordion-collapse collapse show" aria-labelledby="introHeading3">
+                <div class="accordion-body border-top border-black px-4 py-6 p-lg-6">
                   <ul class="list-unstyled">
                     <li class="d-flex justify-content-between mb-4">
                       <p>擁有者</p>
@@ -272,13 +339,13 @@
         <div class="card border-0 bg-transparent">
           <div class="accordion" id="introHistory">
             <div class="accordion-item border border-black">
-              <h2 class="accordion-header border-bottom border-black" id="introHeading4">
+              <h2 class="accordion-header" id="introHeading4">
                 <button class="accordion-button fw-bold p-4 p-lg-6" type="button" data-bs-toggle="collapse" data-bs-target="#introCollapse4" aria-expanded="true" aria-controls="introCollapse4">
                   交易歷史
                 </button>
               </h2>
-              <div id="introCollapse4" class="accordion-collapse collapse show" aria-labelledby="introHeading4">
-                <div class="accordion-body px-4 py-6 p-lg-6">
+              <div id="introCollapse4" class="collapse-masonry accordion-collapse collapse show" aria-labelledby="introHeading4">
+                <div class="accordion-body border-top border-black px-4 py-6 p-lg-6">
 
                   <table class="table table-borderless mb-0 font-Noto-Sans-TC">
                     <thead class="bg-light">
@@ -331,7 +398,7 @@
         <div class="d-flex align-items-end mb-2 mb-lg-4">
           <h3 class="fs-2 fs-lg-1 mb-0 lh-1 d-flex align-items-end">Other<span class="fs-4 fw-bold ms-4 d-none d-lg-block">其餘作品</span></h3>
         </div>
-        <a href="javascript:;">
+        <a href="./artworks.html">
           <button type="button" class="btn-decoration btn-decoration-title border border-bottom-0 border-secondary bg-transparent">MORE</button>
         </a>
       </div>
@@ -344,22 +411,21 @@
           <div class="card border-0 bg-transparent">
             <div class="card-img bg-white p-2 p-xl-6">
               <div class="img-info">
-                <a href="javascript:;">
+                <a href="./filter.html">
                   <img src="./assets/images/series8.jpg" class="card-img-top object-fix-cover h-lg-327" height="164px" alt="img_intro">
                 </a>
                 <div class="img-info-background d-none d-lg-block">
                   <div class="img-info-content">
                     <div>
-                      <p class="mb-2">唯一想擁有的人，唯一不可以擁有的</p>
+                      <p class="mb-2">你們再聊甚麼？我可以一起聽嗎</p>
                       <div class="d-flex align-items-center">
                         <i class="fa-brands fa-ethereum me-2"></i>
                         <p class="mb-0">300</p>
                       </div>
                     </div>
                     <div class="card-btn align-self-end">
-                      <a href="javascript:;">
-                        <button type="button" class="btn-decoration">MORE</button>
-                      </a>
+                      <!--! 註記一下 loop 狀態下，buttom + a 會有 Bug，特別留意 -->
+                      <a href="javascript:;" class="btn-decoration text-decoration-none">MORE</a>
                     </div>
                   </div>
                 </div>
@@ -376,22 +442,20 @@
           <div class="card border-0 bg-transparent">
             <div class="card-img bg-white p-2 p-xl-6">
               <div class="img-info">
-                <a href="javascript:;">
+                <a href="./filter.html">
                   <img src="./assets/images/artwork8.jpg" class="card-img-top object-fix-cover h-lg-327" height="164px" alt="img_intro">
                 </a>
                 <div class="img-info-background d-none d-lg-block">
                   <div class="img-info-content">
                     <div>
-                      <p class="mb-2">唯一想擁有的人，唯一不可以擁有的</p>
+                      <p class="mb-2">哪裡受傷你要講阿，不然我哪知道？</p>
                       <div class="d-flex align-items-center">
                         <i class="fa-brands fa-ethereum me-2"></i>
                         <p class="mb-0">300</p>
                       </div>
                     </div>
                     <div class="card-btn align-self-end">
-                      <a href="javascript:;">
-                        <button type="button" class="btn-decoration">MORE</button>
-                      </a>
+                      <a href="javascript:;" class="btn-decoration text-decoration-none">MORE</a>
                     </div>
                   </div>
                 </div>
@@ -408,22 +472,20 @@
           <div class="card border-0 bg-transparent">
             <div class="card-img bg-white p-2 p-xl-6">
               <div class="img-info">
-                <a href="javascript:;">
+                <a href="./filter.html">
                   <img src="./assets/images/series6.jpg" class="card-img-top object-fix-cover h-lg-327" height="164px" alt="img_intro">
                 </a>
                 <div class="img-info-background d-none d-lg-block">
                   <div class="img-info-content">
                     <div>
-                      <p class="mb-2">唯一想擁有的人，唯一不可以擁有的</p>
+                      <p class="mb-2">長得很像小鳥的企鵝</p>
                       <div class="d-flex align-items-center">
                         <i class="fa-brands fa-ethereum me-2"></i>
                         <p class="mb-0">300</p>
                       </div>
                     </div>
                     <div class="card-btn align-self-end">
-                      <a href="javascript:;">
-                        <button type="button" class="btn-decoration">MORE</button>
-                      </a>
+                      <a href="javascript:;" class="btn-decoration text-decoration-none">MORE</a>
                     </div>
                   </div>
                 </div>
@@ -440,22 +502,20 @@
           <div class="card border-0 bg-transparent">
             <div class="card-img bg-white p-2 p-xl-6">
               <div class="img-info">
-                <a href="javascript:;">
+                <a href="./filter.html">
                   <img src="./assets/images/series7.jpg" class="card-img-top object-fix-cover h-lg-327" height="164px" alt="img_intro">
                 </a>
                 <div class="img-info-background d-none d-lg-block">
                   <div class="img-info-content">
                     <div>
-                      <p class="mb-2">唯一想擁有的人，唯一不可以擁有的</p>
+                      <p class="mb-2">我可以跟你們當朋友嗎？拜託啦</p>
                       <div class="d-flex align-items-center">
                         <i class="fa-brands fa-ethereum me-2"></i>
                         <p class="mb-0">300</p>
                       </div>
                     </div>
                     <div class="card-btn align-self-end">
-                      <a href="javascript:;">
-                        <button type="button" class="btn-decoration">MORE</button>
-                      </a>
+                      <a href="javascript:;" class="btn-decoration text-decoration-none">MORE</a>
                     </div>
                   </div>
                 </div>
