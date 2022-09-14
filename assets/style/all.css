@@ -12,6 +12,12 @@
   transition: .3s;
 }
 
+@media (min-width: 768px) {
+  .btn-hover-dark:hover {
+    background: #212529 !important;
+  }
+}
+
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
