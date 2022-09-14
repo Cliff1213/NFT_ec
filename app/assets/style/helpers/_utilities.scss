@@ -264,3 +264,9 @@ $utilities: map-merge(
     transition: .3s;
   }
 }
+
+.btn-hover-dark:hover {
+  @media(min-width: 768px) {
+    background: $dark !important;
+  }
+}
